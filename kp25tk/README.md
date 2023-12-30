@@ -1,6 +1,13 @@
 KP25TK: 25-key Hex Keyboard
 ===========================
 
+__NOTE:__ `kp25tk.pdf` is the `File » Plot…` to PDF output of the
+schematic; make sure you regenerate this if you modify the schematic.
+
+
+Description
+-----------
+
 This 25-key 5×5 keyboard is similar to that on the [NEC TK-85].
 with the following features:
 
