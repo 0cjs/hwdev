@@ -1,8 +1,11 @@
 KP25TK: 25-key Hex Keyboard
 ===========================
 
-__NOTE:__ `kp25tk.pdf` is the `File » Plot…` to PDF output of the
-schematic; make sure you regenerate this if you modify the schematic.
+For ease of reference, this repository includes some files generated from
+the `kicad/` files. __Regenerate these if you change the KiCad source.__
+- `kp25tk-sch.pdf`: Schematic, generated via `File » Plot…` to PDF output.
+- `kp25tk-pcb.pdf`: PCB, generated via File » Print…, enabling all layers,
+  setting to portrait format and then printing to a file.
 
 Contents:
 - [Description](#description)
