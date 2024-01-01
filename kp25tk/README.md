@@ -4,6 +4,12 @@ KP25TK: 25-key Hex Keyboard
 __NOTE:__ `kp25tk.pdf` is the `File » Plot…` to PDF output of the
 schematic; make sure you regenerate this if you modify the schematic.
 
+Contents:
+- [Description](#description)
+  - [Connections](#connections)
+- [Components](#components)
+  - [Key Swiches](#key-switches)
+
 
 Description
 -----------
