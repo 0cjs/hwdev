@@ -3,6 +3,8 @@ KP25TK To-do List
 
 Schematic:
 - Switch to Schottky diodes (1N519) in matrix to reduce voltage drop.
+- Change discrete column pull-up resistors to 9-pin array; this results
+  in a fairly large savings in board space.
 - Add diode to each key on matrix. Can they be optional?
 
 Board Layout:
