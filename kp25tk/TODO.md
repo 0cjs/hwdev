@@ -3,7 +3,7 @@ KP25TK To-do List
 
 Schematic:
 - Change schematic switch to SPDT to match actual switches.
-- Switch to Schottky diodes (1N519) in matrix to reduce voltage drop.
+- Switch to Schottky diodes (1N5819) in matrix to reduce voltage drop.
 - Add diode to each key on matrix. Can they be optional?
 
 Board Layout:
