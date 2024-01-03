@@ -1,4 +1,4 @@
-21861871771890581
+21865342712473289
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -538,6 +538,13 @@ Matias ALPS keyswitch ISO enter
 0
 2
 2
+Button_Switch_Keyboard_Keycap
+SW_Cherry_MX_Keycap_1.00u
+
+Cherry MX keyswitch  keycap 1.00u
+0
+0
+0
 Button_Switch_SMD
 Nidec_Copal_SH-7010A
 4-bit rotary coded switch, J-hook, https://www.nidec-copal-electronics.com/e/catalog/switch/sh-7000.pdf
@@ -2267,6 +2274,13 @@ SW PUSH SMALL Tactile C&K
 0
 4
 2
+Button_Switch_THT_Extras
+SW_MINI-SPDT-SW
+
+
+0
+3
+3
 Buzzer_Beeper
 Buzzer_12x9.5RM7.6
 Generic Buzzer, D12mm height 9.5mm with RM7.6mm

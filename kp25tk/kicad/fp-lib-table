@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Button_Switch_Keyboard_Keycap")(type "KiCad")(uri "${KIPRJMOD}/SharedSupport/footprints/Button_Switch_Keyboard_Keycap.pretty")(options "")(descr "Keycaps for keyboard applications"))
+  (lib (name "Button_Switch_THT_Extras")(type "KiCad")(uri "${KIPRJMOD}/SharedSupport/footprints/Button_Switch_THT.pretty")(options "")(descr "Additional buttons and switches, through hole"))
+)
