@@ -6,6 +6,7 @@ the `kicad/` files. __Regenerate these if you change the KiCad source.__
 - [`kp25tk-sch.pdf`]: Schematic, generated via `File » Plot…` to PDF output.
 - [`kp25tk-pcb.pdf`]: PCB, generated via File » Print…, enabling all layers,
   setting to portrait format and then printing to a file.
+- [`kp25tk-render.png`]: PCB 3D render.
 
 Contents:
 - [Description](#description)
@@ -170,6 +171,7 @@ XXX
 
 <!-------------------------------------------------------------------->
 [`kp25tk-pcb.pdf`]: ./kp25tk-pcb.pdf
+[`kp25tk-render.png`]: ./kp25tk-render.png
 [`kp25tk-sch.pdf`]: ./kp25tk-sch.pdf
 
 [NEC TK-85]: https://gitlab.com/retroabandon/tk80-re
