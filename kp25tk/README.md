@@ -46,7 +46,7 @@ header is unshrouded to allow the use of smaller than 13 column connectors
 when the full 26 pins are not needed.
 
 The connector pin layout is configured via wire-wrapping or jumpering
-individual 1-row header pins for each function group to a second 2×14
+individual 1-row header pins for each function group to a second 2×13
 header ("Config") that parallels the first. This allows setting the ribbon
 cable connector pinout to match a wide variety of scanning devices. The
 function groups are:
@@ -77,13 +77,13 @@ description says that a bit of hot glue or epoxy will do the trick.
 Theory of Operation
 -------------------
 
-The 2×14 pin __Host__ header is connected via ribbon cable to the host that
+The 2×13 pin __Host__ header is connected via ribbon cable to the host that
 will scan the keypad. Not all 26 pins need be used, but to help avoid pin
 interference and misconnections it's best to use a 26-pin IDC connector on
 the keypad end of the cable, even if a ribbon cable with fewer conductors
 is used.
 
-The 2×14 __Config__ header pins are connected to the same-numbered Host
+The 2×13 __Config__ header pins are connected to the same-numbered Host
 connector pins; the builder needs to connect these to the function group
 pins below; wire-wrap is the most reliable way of doing this, but jumper
 wires with "dupont"-style female connectors may also be used.
