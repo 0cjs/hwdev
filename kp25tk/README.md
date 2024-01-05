@@ -14,8 +14,7 @@ Contents:
   - [Key Swiches](#key-switches)
 - [Theory of Operation](#theory-of-operation)
   - [Power Inputs](#power-inputs)
-  - [Row Select Inputs](#row-select-inputs)
-  - [Column Outputs](#column-outputs)
+  - [Keypad Matrix](#keypad-matrix)
   - [NMI, Reset and Slide Switch Outputs](#nmi-reset-and-slide-switch-outputs)
 
 
@@ -84,33 +83,86 @@ the keypad end of the cable, even if a ribbon cable with fewer conductors
 is used.
 
 The 2×13 __Config__ header pins are connected to the same-numbered Host
-connector pins; the builder needs to connect these to the function group
-pins below; wire-wrap is the most reliable way of doing this, but jumper
+header pins; the builder needs to connect these to the function group
+pins below. Wire-wrap is the most reliable way of doing this, but jumper
 wires with "dupont"-style female connectors may also be used.
 
-#### Power Inputs
+### Power Inputs
 
-GND and +5V must be supplied from the host. +5V is used to power the
-Schmitt inverters that debounce and invert the NMI key, RESET button
-and slide switch. If only the keypad (less NMI key) is used, +5V is
-not necessary.
+GND and +5V must be supplied from the host. (This is normally supplied
+on the Host header, and then wired from the Config header to the `VCC_IN`
+and `GND_IN` header pins.)
 
-#### Row Select Inputs
++5V is used to power the Schmitt inverters that debounce and invert the NMI
+key, RESET button and slide switch. If only the keypad (less NMI key) is
+used, +5V is not necessary.
 
-Each of the three row select inputs connects through the cathode of a
-signal diode to the coresponding row line for the keypad. When scanning,
-each row in turn is driven low by the host, which then scans that row using
-the column outputs (see below). The diodes allow the host to pull a row
-low, but prevent the host from driving a row high. The diodes prevent short
-circuits between the row select inputs (which are likely to damage the
-host) when two keys in a column, one on a grounded row and one on a high
-row, are pressed simultaneously.
+### Keypad Matrix
 
-#### Column Outputs
+Each of the three row select inputs, `ROWSEL0`, `ROWSEL1`, `ROWSEL2`
+connects to the corresponding row line for the keypad. When scanning, each
+row in turn is driven low by the host, which then scans that row using the
+column outputs.
 
-XXX
+Each column line is pulled high by its pull-up resistor when no key in that
+column is pressed; this will read as `1` on the corresponding column output.
+When a key in a _non-scanned_ row (row high or floating) is pressed, this
+does not change. When a key in the _scanned_ row is pressed, the low row
+sinks current through the diode and the closed keyswitch, bringing the
+column low.
 
-#### NMI, Reset and Slide Switch Outputs
+#### Keypad Pull-up Resistor Values
+
+The keypad relies on the ability of the host driving the row select inputs
+to to pull them down to 0 V, and do so reasonably quickly. Host drivers'
+ability to do this varies, and the additional capacitance introduced by the
+wiring connecting the keypad to the host, and the keys themselves, can
+degrade this.
+
+The 22K values chosen for the resistors give a fairly weak pull-up that's
+still higher than other designs without a cable between the keyboard row
+drivers and column inputs of the host. The resistor pack is in a socket to
+allow changing the value.
+
+If you are getting intermittent or no response from pressing keys, the
+pull-up is too strong and you should try a _higher_ resistance, such as 33K
+or 47K.
+
+If you are getting lengthened or repeated key presses, the pull-up is too
+weak and you should try a _lower_ resistance, such as 10K or 4K7.
+
+#### Keypad Matrix Diodes
+
+The diodes in the matrix serve two purposes.
+
+First, they prevent shorts between the row inputs that would likely damage
+the device driving them. Without the diodes, two switches held down on the
+same column when one row is low short the low row to the high row.
+(Consider, e.g., low row 0 → closed `KEY00` → pulls column 0 low → closed
+`KEY08` pulls row 1 low. This is blocked by the diodes between `KEY08` and
+row 1.) In keyboards without a diode on each key in the matrix, a diode on
+each row line (cathode toward the row select input) would be required
+instead.
+
+Second, They prevent "ghost keys" when two keys in one column and one key
+in the same row as either are pressed. Without the diodes, If `KEY00`,
+`KEY01` and `KEY08` are pressed and `ROWSEL1` is low:
+1. Low row 1 connects to column 0 via closed `KEY08`, pulling column 0 low.
+2. Low column 0 connects to row 0 via closed `KEY00`, pulling row 0 low.
+3. Low row 0 connects to column 1 via closed `KEY01`, pulling column 1 low.
+4. The system scanning row 1 sees column 1 low, though `KEY09` is not
+   pressed.
+The diode between `KEY00` and row 0 prevents the connection in point 2.
+
+Schottky diodes are used instead of silicon diodes to reduce the forward
+voltage drop. These _must_ be used for reliability, as the maximum ouput
+voltage for a 5V TTL low signal is 0.5 V, and a silicon diode would exceed
+this, not bringing the column lines low enough to meet that specification.
+
+This is still out of spec for 5V CMOS output voltage, but well within the
+1.5 V maximum that CMOS parts must accept at input as a low voltage.
+
+### NMI, Reset and Slide Switch Outputs
 
 XXX
 
