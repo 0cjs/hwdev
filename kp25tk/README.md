@@ -77,6 +77,14 @@ description says that a bit of hot glue or epoxy will do the trick.
 Theory of Operation
 -------------------
 
+Component Summary:
+- C[123], R[123], D[123], U1: Debounce and inversion circuitry for the
+  `NMI` key, `RESET` button, and slide `SWITCH`, respectively.
+- R[45], D[45]: Current-limiting resistors and LEDs for `PWR` (Vcc/GND
+  present) and `SWLED` (slide switch ON) indicators, respectively.
+
+### Host Connector and Configuration Headers
+
 The 2×13 pin __Host__ header is connected via ribbon cable to the host that
 will scan the keypad. Not all 26 pins need be used, but to help avoid pin
 interference and misconnections it's best to use a 26-pin IDC connector on
@@ -97,6 +105,10 @@ and `GND_IN` header pins.)
 +5V is used to power the Schmitt inverters that debounce and invert the NMI
 key, RESET button and slide switch. If only the keypad (less NMI key) is
 used, +5V is not necessary.
+
+A current-limiting resistor R4 (1K5) and power LED D4 indicate that the
+board is powered. The current-limiting resistor is relatively high value so
+that the LED isn't distractingly bright.
 
 ### Keypad Matrix
 
@@ -165,7 +177,17 @@ This is still out of spec for 5V CMOS output voltage, but well within the
 
 ### NMI, Reset and Slide Switch Outputs
 
-XXX
+XXX Fill in debounce and true-logic/inverting output details.
+
+A current-limiting resistor R5 (1K5) and power LED D5 indicate when the
+slide switch is active (up). The current-limiting resistor is relatively
+high value so that the LED isn't distractingly bright and to minimise
+load on the U1F buffer output.
+
+We avoid placing the LED on the switch side of U1F to avoid any
+interference with the debounce logic. That leaves the options of the
+postive-logic U1F output and the negative-logic U1E output: we choose the
+latter because LS logic is much better at sinking current than sourcing it.
 
 
 
