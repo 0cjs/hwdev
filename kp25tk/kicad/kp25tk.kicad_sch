@@ -6,7 +6,7 @@
 
   (title_block
     (title "KP25TK 25 Key Hex Keyboard")
-    (rev "0.0.6")
+    (rev "0.0.7")
     (comment 1 "Desginer: cjs")
     (comment 2 "Drafter: Andy Diags")
   )
