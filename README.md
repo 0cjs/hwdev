@@ -1,6 +1,7 @@
 hwdev: cjs's Hardware Development Repo
 ======================================
 
+- [`drom`]: Ideas for a diode-ROM board.
 - [`kp25tk`]: Configurable 25-key parallel keypad, with additional reset
   button and slide switch. The primary use is as a hex keypad interface to
   trainer boards, but it can serve a wide variety of purposes.
