@@ -23,9 +23,13 @@ switch. XXX This needs to be investigated.
 
 - Wikipedia, [Diode matrix][wp].
 - EESE, [Understanding Diode ROM][eese 505304]. Includes sample schematic.
-- retrocmp.com, [Diode ROM Book][drbook]. Detailed description of diode
-  ROM boards for a PDP-11 (UNIBUS or QBUS interface). It also includes
-  LEDs indicating the last address accessed and the data value output.
+- retrocmp.com, [Diode ROM Book][drbook]. Detailed description of diode ROM
+  boards for a PDP-11 (UNIBUS or QBUS interface). It also includes LEDs
+  indicating the last address accessed and the data value output.
+- VCF Forum, [PDP-11 Diode ROM][vcf 1246504]. Discussion of the above, and
+  some other links.
+- Triumph Adler TA 10/1 accounting machine "programmable" diode ROM board
+  pics (uses SN74154N demuxes): [[ta10-107]], [[ta10-109]]
 
 
 Address Decoding
@@ -101,9 +105,12 @@ Inventory (cjs):
 
 
 <!-------------------------------------------------------------------->
-[wp]: https://en.wikipedia.org/wiki/Diode_matrix
-[eese 505304]: https://electronics.stackexchange.com/q/505304/15390
 [drbook]: https://www.retrocmp.com/projects/diode-rom-book
+[eese 505304]: https://electronics.stackexchange.com/q/505304/15390
+[ta10-107]: http://www.horniger.de/computer/ta/TA101_107.jpg
+[ta10-109]: http://www.horniger.de/computer/ta/TA101_109.jpg
+[vcf 1246504]: https://forum.vcfed.org/index.php?threads/pdp-11-diode-rom.1246504/
+[wp]: https://en.wikipedia.org/wiki/Diode_matrix
 
 [SN74LS138]: http://www.ti.com/lit/gpn/sn74ls138
 [SN74HCT138]: http://www.ti.com/lit/gpn/sn74hct138
