@@ -19,8 +19,16 @@ which is a bit more intuitive.
 
 ### Anode Recovery
 
-Diodes have parasitic capacitance that must be discharged after level
-switch. XXX This needs to be investigated.
+Diodes have parasitic capacitance that must be charged after level switch.
+An anode recovery system applies current to the the data output lines
+connected to the diode anodes in order to ensure that any lines that had
+been pulled low through a diode in the previously selected row are brought
+back high again before the next memory read.
+
+The retrocomp.com Diode ROM Book does this via a BC557 transistor sourcing
+current from Vcc through a 47 ohm resistor to a group of 1N4148 anodes,
+each with its cathode connected to a data line. There seems to be a slight
+delay (via R/C network) on the signal going to the base of the transistor.
 
 ### References
 
