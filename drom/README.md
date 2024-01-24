@@ -13,6 +13,9 @@ pull-up), giving a `0` output.
 
 It's probably reasonable to connect the column outputs to inverting HCT
 buffers to give the outputs lots of drive capability, including into CMOS.
+Using inverting buffers also means that switches or jumpers in series with
+the diodes will make represent a `1` bit when on and a `0` bit when off,
+which is a bit more intuitive.
 
 ### Anode Recovery
 
