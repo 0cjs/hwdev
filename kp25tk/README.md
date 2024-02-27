@@ -1,13 +1,15 @@
 KP25TK: 25-key Hex Keyboard
 ===========================
 
-For ease of reference, this repository includes some files generated from
-the `kicad/` files. __Bump version numbers and regenerate these if you
-change the KiCad source.__
+For ease of reference, this repository includes a `render/` subdirectory
+containing some files generated from the `kicad/` files. __Bump version
+numbers and regenerate these if you change the KiCad source.__
 - [`kp25tk-sch.pdf`]: Schematic, generated via `File » Plot…` to PDF output.
 - [`kp25tk-pcb.pdf`]: PCB, generated via File » Print…, enabling all layers,
   setting to portrait format and then printing to a file.
 - [`kp25tk-render.png`]: PCB 3D render.
+- [`kp25tk-silkscreen.png`]:
+- [`kp25tk-tracks.png`]:
 
 Contents:
 - [Description](#description)
@@ -196,6 +198,8 @@ latter because LS logic is much better at sinking current than sourcing it.
 [`kp25tk-pcb.pdf`]: ./kp25tk-pcb.pdf
 [`kp25tk-render.png`]: ./kp25tk-render.png
 [`kp25tk-sch.pdf`]: ./kp25tk-sch.pdf
+[`kp25tk-silkscreen.png`]: ./kp25tk-silkscreen.png
+[`kp25tk-tracks.png`]: ./kp25tk-tracks.png
 
 [NEC TK-85]: https://gitlab.com/retroabandon/tk80-re
 [kailh]: https://www.adafruit.com/product/4958
