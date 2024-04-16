@@ -195,11 +195,11 @@ latter because LS logic is much better at sinking current than sourcing it.
 
 
 <!-------------------------------------------------------------------->
-[`kp25tk-pcb.pdf`]: ./kp25tk-pcb.pdf
-[`kp25tk-render.png`]: ./kp25tk-render.png
-[`kp25tk-sch.pdf`]: ./kp25tk-sch.pdf
-[`kp25tk-silkscreen.png`]: ./kp25tk-silkscreen.png
-[`kp25tk-tracks.png`]: ./kp25tk-tracks.png
+[`kp25tk-pcb.pdf`]: ./render/kp25tk-pcb.pdf
+[`kp25tk-render.png`]: ./render/kp25tk-render.png
+[`kp25tk-sch.pdf`]: ./render/kp25tk-sch.pdf
+[`kp25tk-silkscreen.png`]: ./render/kp25tk-silkscreen.png
+[`kp25tk-tracks.png`]: ./render/kp25tk-tracks.png
 
 [NEC TK-85]: https://gitlab.com/retroabandon/tk80-re
 [kailh]: https://www.adafruit.com/product/4958
