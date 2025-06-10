@@ -12,6 +12,8 @@ Projects:
   trainer boards, but it can serve a wide variety of purposes.
 - [`rc6800`]: Variant of the RC6502 bus design, which is in turn a variant of
   the RC2014 bus.
+- [`romext-2364`]: A 2764 EPROM in this board outside the system is
+  connected via a cable as a 2364 ROM in a socket in the system.
 - [`tk85`]: Projects for the NEC TK-85 trainer board.
 
 ### Revision Numbers
@@ -37,4 +39,5 @@ Release versions are tagged in Git with the project name and release, e.g.
 [`drom`]: ./drom/
 [`kp25tk`]: ./kp25tk/
 [`rc6800`]: ./rc6800/
+[`romext-2364`]: ./romext-2364/
 [`tk85`]: ./tk85/
