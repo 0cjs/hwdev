@@ -20,6 +20,7 @@ Contents:
   - [Power Inputs](#power-inputs)
   - [Keypad Matrix](#keypad-matrix)
   - [NMI, Reset and Slide Switch Outputs](#nmi-reset-and-slide-switch-outputs)
+- [Generating Outputs](#generating-outputs)
 
 
 Description
@@ -209,6 +210,40 @@ postive-logic U1F output and the negative-logic U1E output: we choose the
 latter because LS logic is much better at sinking current than sourcing it.
 
 
+Generating Outputs
+------------------
+
+This should be automated with scripts to the greatest degree possible.
+(Currently nothing is automated.)
+
+### Renders
+
+Renders are previews for popele browsing the repo who want to get a quick
+look at the schematic and the board layout.
+
+### Gerbers
+
+These are sent to the fab. Currently they're targeted to [JLC PCB], using
+the instructions at [How to generate Gerber and Drill files in KiCad
+7][jlc-gen], modified appropriately for KiCad 9 and this project.
+
+- Gerbers:
+  - In the PCB editor, open File → Fabrication Outputs → Gerbers (.gbr)…
+  - Output folder: `fab/` in relative mode (giving `…/hwdev/kp25tk/kicad/fab/`).
+  - ✓ layers: F.Cu, B.Cu, F.Paste, B.Paste, F.Silkscreen, B.Silkscreen,
+    F.Mask, B.Mask, Edge.Cuts. Add In1.Cu and In2.Cu if doing a 4/6 layer
+    design (but this is not).
+  - General:
+    - ✓ "Plot reference designators" (not in KiCad 9?).
+    - ✓ "Check zone fills before plotting.
+  - Gerber Options:
+    - ✓ "Use Protel filename extensions"
+    - ✓ "Subtract soldermask from silkscreen" (not in KiCad 9?)
+  - Click "Plot". Refill zone fills if prompted.
+
+
+
+
 
 <!-------------------------------------------------------------------->
 [`kp25tk-pcb.pdf`]: ./render/kp25tk-pcb.pdf
@@ -220,3 +255,6 @@ latter because LS logic is much better at sinking current than sourcing it.
 [NEC TK-85]: https://gitlab.com/retroabandon/tk80-re
 [kailh]: https://www.adafruit.com/product/4958
 [keysw]: https://www.aliexpress.com/item/1005004285423123.html
+
+[JLC PCB]: https://jlcpcb.com
+[jlc-gen]: https://jlcpcb.com/help/article/how-to-generate-gerber-and-drill-files-in-kicad-7
