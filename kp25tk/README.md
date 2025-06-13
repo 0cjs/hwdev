@@ -26,16 +26,15 @@ Description
 -----------
 
 This 25-key 5×5 keyboard is similar to that on the [NEC TK-85].
-with the following features:
+with the following features.
 
-- Power:
-  - +5V Vcc, GND
-- Matrix:
+* Power: +5V Vcc and GND from host system
+* Matrix:
   - 3 row select input: ground one row to select
   - 8 row column output: rows pulled up to Vcc and pulled down by switch
   - 4×4 layout for hex digits `0` to `F`
   - 4 keys at the top and 4 keys at the right for commands
-- 3 independent debounced switches:
+* 3 independent debounced switches:
   - All 3 provide positive and negative logic outputs
   - 1 key at upper right hand corner of switch array for NMI interrupt
   - 1 tactile switch for RESET
@@ -44,23 +43,40 @@ with the following features:
 ### Connections
 
 The board is connected to the scanning device via a 2 row × 13 column
-.1"-pitch male header ("Host") for a ribbon cable IDC female connector. The
-header is unshrouded to allow the use of smaller than 13 column connectors
-when the full 26 pins are not needed.
+.1"-pitch male header ("Host"), usually used with a ribbon cable and IDC
+female connector. The header is unshrouded to allow the use of smaller than
+13 column connectors when the full 26 pins are not needed. (Though we
+suggest _always_ using a 26P connector on the keypad side and simply using
+a narrower ribbon cable that does not take up the full width of the
+connector.)
 
-The connector pin layout is configured via wire-wrapping or jumpering
-individual 1-row header pins for each function group to a second 2×13
-header ("Config") that parallels the first. This allows setting the ribbon
-cable connector pinout to match a wide variety of scanning devices. The
-function groups are:
-- Power input: 2:GND, 1:+5V
-- Row select input: 3:row 2, 2:row 1, 1:row 0
-- Column output: 8:column 7, ..., 1:column 0
-- NMI key output: 2:/NMI (negative logic), 1:NMI (positive logic)
-- RESET button output: 2:/RESET (negative logic), 1:RESET (positive logic)
-- Slide switch output:
+The connector pin layout is configured via wire-wrapping or jumpering (with
+"dupont" female-female jumper wires) individual 1-row header pins for each
+function group to a second 2×13 header ("Config") that parallels the first.
+This allows setting the ribbon cable connector pinout to match a wide
+variety of scanning devices. The function groups are:
+
+* Power input: 2:GND, 1:+5V
+* Row select input: 3:row 2, 2:row 1, 1:row 0
+* Column output: 8:column 7, ..., 1:column 0
+* NMI key output: 2:/NMI (negative logic), 1:NMI (positive logic)
+* RESET button output: 2:/RESET (negative logic), 1:RESET (positive logic)
+* Slide switch output:
   -   UP: 2=low, 1=high
   - DOWN: 2=high, 1=low
+
+### Design Goals
+
+- Be fully configurable so it can work with almost any system.
+- Do configuration in a way that it can be changed later.
+- Provide a full hex keypad with additional keys for functions and some
+  debounced switches for direct (non-scanned) functions.
+- Have a physical layout that parallels the logical layout in order to make
+  tracing the operation (whether for understanding or debugging) as easy as
+  possible, even for novices to electronics.
+- Use only through-hole parts to make soldering and modification as easy as
+  possible.
+- Be as compact as reasonably possible while meeting the other goals above.
 
 
 Components
@@ -88,11 +104,11 @@ Component Summary:
 
 ### Host Connector and Configuration Headers
 
-The 2×13 pin __Host__ header is connected via ribbon cable to the host that
-will scan the keypad. Not all 26 pins need be used, but to help avoid pin
-interference and misconnections it's best to use a 26-pin IDC connector on
-the keypad end of the cable, even if a ribbon cable with fewer conductors
-is used.
+The 2×13 pin __Host__ header is connected to the host that will scan the
+keypad. This is typically done with a ribbon cable with IDC connectors on
+each end. Not all 26 pins need be used, but to help avoid pin interference
+and misconnections it's best to use a 26-pin IDC connector on the keypad
+end of the cable, even if a ribbon cable with fewer conductors is used.
 
 The 2×13 __Config__ header pins are connected to the same-numbered Host
 header pins; the builder needs to connect these to the function group
