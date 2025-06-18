@@ -1,0 +1,3 @@
+[submodule "kicad-lib/kitspace-kicad_footprints"]
+	path = kicad-lib/kitspace
+	url = https://github.com/kitspace/kicad_footprints.git
