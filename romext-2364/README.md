@@ -26,6 +26,12 @@ the board should be updated to be configurable for these).
 2. The 2364 `C̅S̅` pin 20 is designed for mask ROMs programmed with negative
    logic enable.
 
+### Non-project Settings
+
+The following settings are important but not kept as part of the project
+by KiCad.
+
+* PCB grid is 2.54 mm for parts and 1.27 mm for traces.
 
 
 
