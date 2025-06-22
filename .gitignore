@@ -1,4 +1,7 @@
-/*/kicad/*.kicad_prl
+/kicad-lib/*.bak
+/*/kicad/#auto_saved_files#
+/*/kicad/_autosave-*
 /*/kicad/*-backups/
 /*/kicad/*.lck
 /*/kicad/fp-info-cache
+/*/kicad/*.kicad_prl
