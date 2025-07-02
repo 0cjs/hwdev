@@ -12,6 +12,8 @@ Projects:
   trainer boards, but it can serve a wide variety of purposes.
 - [`rc6800`]: Variant of the RC6502 bus design, which is in turn a variant of
   the RC2014 bus.
+- [`rom-read-adapter`]: Interface to allow reading of ROMs via the 8265
+  PPI GPIO interface on a SuperAKI-80 SBC (or other similar system).
 - [`tk85`]: Projects for the NEC TK-85 trainer board.
 
 
@@ -20,4 +22,5 @@ Projects:
 [`drom`]: ./drom/
 [`kp25tk`]: ./kp25tk/
 [`rc6800`]: ./rc6800/
+[`rom-read-adapter`]: ./rom-read-adapter/
 [`tk85`]: ./tk85/
