@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "0cjs_hwdev")(type "KiCad")(uri "${KIPRJMOD}/../../kicad-lib/0cjs_hwdev.pretty")(options "")(descr ""))
+)

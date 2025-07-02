@@ -37,6 +37,8 @@ __Note for developers:__ Please run `Test` before committing. But also:
   trainer boards, but it can serve a wide variety of purposes.
 - [`rc6800`]: Variant of the RC6502 bus design, which is in turn a variant of
   the RC2014 bus.
+- [`romread-adapter`]: Interface to allow reading of ROMs via the 8265
+  PPI GPIO interface on a SuperAKI-80 SBC (or other similar system).
 - [`romext-2364`]: A 2764 EPROM in this board outside the system is
   connected via a cable as a 2364 ROM in a socket in the system.
 - [`tk85`]: Projects for the NEC TK-85 trainer board.
@@ -112,6 +114,7 @@ viewer].__ (These may work by uploading the individual files under the
 [`floppy-head-protector`]: ./floppy-head-protector/
 [`kp25tk`]: ./kp25tk/
 [`rc6800`]: ./rc6800/
+[`romread-adapter`]: ./romread-adapter/
 [`romext-2364`]: ./romext-2364/
 [`tk85`]: ./tk85/
 
