@@ -1,6 +1,11 @@
 hwdev: cjs's Hardware Development Repo
 ======================================
 
+General Files:
+- `kicad-lib`: Contains the `0cjs-hwdev` KiCad symbol library, mainly
+  vintage parts.
+
+Projects:
 - [`drom`]: Ideas for a diode-ROM board.
 - [`kp25tk`]: Configurable 25-key parallel keypad, with additional reset
   button and slide switch. The primary use is as a hex keypad interface to
