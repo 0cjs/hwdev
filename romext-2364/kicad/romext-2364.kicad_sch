@@ -4,6 +4,11 @@
 	(generator_version "9.0")
 	(uuid "c75d03f9-b52f-4398-8fdc-c3d88af30af8")
 	(paper "A4")
+	(title_block
+		(title "romext-2364")
+		(rev "1")
+		(comment 1 "https://github.com/0cjs/hwdev")
+	)
 	(lib_symbols
 		(symbol "0cjs-hwdev:2364"
 			(exclude_from_sim no)
