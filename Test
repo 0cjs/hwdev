@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+set -Eeuo pipefail
+trap 'ec=$?; echo 1>&2 "INTERNAL ERROR: ec=$ec line=$LINENO cmd=$BASH_COMMAND";
+      exit $ec;' ERR
+
+die()  { ec="$1"; shift; echo 1>&2 "ERROR ($ec):" "$@"; exit $ec; }
+fail() { ec=$?; echo "FAILED exitcode=$ec ($(elapsed)s)"; exit $ec; }
+
+elapsed_start=$(date +%s)
+elapsed() { echo $(( $(date +%s) - $elapsed_start )); }
+
+####################################################################
+
+kicad-cli --version >/dev/null 2>&1 || die 3 "kicad-cli command not found"
+
+export REPO=$(cd "$(dirname "$0")" && pwd -P)
+for sch in */kicad/*.kicad_sch; do
+    projdir=$(dirname $(dirname "$sch"))
+    basename=$(basename "$sch" .kicad_sch)
+    #   Creates any dirs needed for output path.
+    kicad-cli sch export pdf \
+        --output "$projdir/render/$basename-sch.pdf"  \
+        "$sch"
+done
+
+echo "OK ($(elapsed)s)"
