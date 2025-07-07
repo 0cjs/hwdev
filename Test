@@ -21,6 +21,15 @@ for sch in */kicad/*.kicad_sch; do
     kicad-cli sch export pdf \
         --output "$projdir/render/$basename-sch.pdf"  \
         "$sch"
+    #   KiCad always sets the creation date to the current time, which
+    #   means that this file will be a changed version every time we
+    #   re-run the export, even if nothing in the schematic has actually
+    #   changed. We delete this line so that we don't get a pile of
+    #   "updated" PDFs every time this is run. (Note that this tag being
+    #   bookended by newlines is what KiCad does, but the newlines are
+    #   not a necessary part of PDF syntax.)
+    sed -i -e '/^\/CreationDate (D:..............)$/d' \
+        "$projdir/render/$basename-sch.pdf"
 done
 
 echo "OK ($(elapsed)s)"
