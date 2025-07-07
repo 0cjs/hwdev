@@ -78,5 +78,136 @@
 		)
 	)
 	(net 0 "")
+	(gr_line
+		(start 105 194)
+		(end 139 194)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "060b9c2a-cdb0-449d-add4-01dc750d77cb")
+	)
+	(gr_line
+		(start 105 170)
+		(end 105 194)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "1734fc70-4282-44f0-a9b1-7af7b9e7ea9f")
+	)
+	(gr_line
+		(start 131 40)
+		(end 170 40)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "2ad0797e-1b95-4e06-b800-05ebae36a09e")
+	)
+	(gr_line
+		(start 139 170)
+		(end 139 194)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "2d27e296-3ed1-4b2b-a9cd-052ed8a59424")
+	)
+	(gr_line
+		(start 84 40)
+		(end 99 17)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "3416fb07-706e-45c0-ae31-eb1e51d88bde")
+	)
+	(gr_line
+		(start 131 40)
+		(end 131 17)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "5d9218d6-0ab4-481a-b789-0c9db4a8a5f4")
+	)
+	(gr_line
+		(start 40 40)
+		(end 40 170)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "8d31bb91-cd77-47a9-ad50-59b26bdc3d73")
+	)
+	(gr_line
+		(start 99 17)
+		(end 131 17)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "9a9edd06-2389-4b18-8550-5527bd69e71a")
+	)
+	(gr_circle
+		(center 105 105)
+		(end 126 105)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "c4ff585e-1792-4c45-8bbe-7b555660a6a1")
+	)
+	(gr_line
+		(start 40 170)
+		(end 105 170)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "e4f9830a-6ae6-49f0-bf0e-130d64c1613a")
+	)
+	(gr_line
+		(start 40 40)
+		(end 84 40)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "ee712a04-86d9-4af9-a135-c6cab7cd9dff")
+	)
+	(gr_line
+		(start 139 170)
+		(end 170 170)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "f38079b5-bdb8-48fa-97da-b01206d93d25")
+	)
+	(gr_line
+		(start 170 40)
+		(end 170 170)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "f59670ce-57f2-4e1c-b763-b62749c88d72")
+	)
 	(embedded_fonts no)
 )
