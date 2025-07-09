@@ -9,7 +9,7 @@
 	(paper "A4")
 	(title_block
 		(title "romext-2364")
-		(rev "1.0dev")
+		(rev "1.0")
 		(comment 1 "https://github.com/0cjs/hwdev")
 	)
 	(layers
