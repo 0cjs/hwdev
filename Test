@@ -8,6 +8,24 @@ fail() { ec=$?; echo "FAILED exitcode=$ec ($(elapsed)s)"; exit $ec; }
 
 elapsed_start=$(date +%s)
 elapsed() { echo $(( $(date +%s) - $elapsed_start )); }
+#
+####################################################################
+
+jlcpcb_zip() {
+    local pcbname="$1"
+    local outdir="$2"
+    (
+        cd $outdir
+        rm -f ../"$pcbname"-jlcpcb.zip
+        #   We disable ZIP compression because that will make Git's
+        #   compression of the file as it changes much worse.
+        zip  -q -0 ../"$pcbname"-jlcpcb.zip    \
+            *.g[tb]o *.g[tb]s *.g?l         \
+            *.gm1                           \
+            *.drl *-drl_map.gbr             \
+            #
+    )
+}
 
 ####################################################################
 
@@ -33,6 +51,24 @@ for sch in */kicad/*.kicad_sch; do
     #   not a necessary part of PDF syntax.)
     sed -i -e '/^\/CreationDate (D:..............)$/d' \
         "$projdir/render/$basename-sch.pdf"
+done
+
+for pcb in romext-2364/kicad/*.kicad_pcb; do
+    pcbname=$(basename "$pcb" .kicad_pcb)
+    [[ $pcbname = _autosave-* ]] && continue
+    proj=$(dirname "$(dirname "$pcb")")
+    outdir="$proj/render/$pcbname-gerber"
+    rm -rf "$outdir"
+    #   Generates all layers, whether needed or not.
+    kicad-cli pcb export gerbers \
+        --output "$outdir" "$pcb"
+    #   The KiCad defaults match what JLCPCB asks for, excepting that
+    #   JLCPCB suggests adding GerberX2 drill maps in as well.
+    kicad-cli pcb export drill \
+        --generate-map --map-format gerberx2 \
+        --output "$outdir" "$pcb"
+    #   Build ZIP files for submission to fabs.
+    jlcpcb_zip "$pcbname" "$outdir"
 done
 
 echo "OK ($(elapsed)s)"
