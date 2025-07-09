@@ -11,9 +11,12 @@ elapsed() { echo $(( $(date +%s) - $elapsed_start )); }
 
 ####################################################################
 
-kicad-cli --version >/dev/null 2>&1 || die 3 "kicad-cli command not found"
-
 export REPO=$(cd "$(dirname "$0")" && pwd -P)
+cd "$REPO"
+
+kicad-cli --version >/dev/null 2>&1 || die 3 "kicad-cli command not found"
+kicad-cli --version >kicad-version
+
 for sch in */kicad/*.kicad_sch; do
     projdir=$(dirname $(dirname "$sch"))
     basename=$(basename "$sch" .kicad_sch)

@@ -7,6 +7,7 @@ projects may still have manually-generated renders you need to generate
 yourself.)
 
 General Files:
+- `kicad-version`: The version of KiCad used in the commit.
 - `kicad-lib`: Contains the `0cjs-hwdev` KiCad symbol library, mainly
   vintage parts.
 
