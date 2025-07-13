@@ -1,0 +1,87 @@
+#!/usr/bin/env bash
+#
+#   render - Generate PDF schematics and Gerber PCB layouts
+#
+set -Eeuo pipefail
+trap 'ec=$?; echo 1>&2 "INTERNAL ERROR: ec=$ec line=$LINENO cmd=$BASH_COMMAND";
+      exit $ec;' ERR
+
+die() { ec=$1; shift; echo 1>&2 "$@"; exit $ec; }
+
+render_sch() {
+    local path="$1"; shift
+    local name=$(basename "$path" .kicad_sch)
+    local srcdir=$(dirname "$path")
+    local outdir="$srcdir"/../render
+    local output="$outdir/$name-sch.pdf"
+    echo "───── Rendering $name"
+    mkdir -p "$outdir"
+    kicad-cli sch export pdf --output "$output" "$path"
+
+    #   XXX The above leaves the creation date in the file, which means
+    #   it will be changed every time the script is run. Previously we
+    #   modified the file as follows to get rid of it:
+    #
+    #       sed -i -e '/^\/CreationDate (D:..............)$/d' \
+    #           "$projdir/render/$basename-sch.pdf"
+    #
+    #   However, a better way to do this (that will preserve the original
+    #   creation date and be easier for the Gerbers as well) is simply to
+    #   generate the new version, diff with the last-committed
+    #   version, and copy the new version over the last-committed version
+    #   only if the diffs do not conisist entirely of lines containing
+    #   "CreationDate" or whatever. (But we need to note that we rely on
+    #   `kicad-cli sch export pdf` putting the CreationDate on a separate
+    #   line of the PDF, which it happens to do, but is not required for
+    #   the PDF format.)
+}
+
+render_pcb() {
+    #   XXX This currently overwrites all the output files with new
+    #   versions even if only the creation date of these files is changing.
+    local path="$1"; shift
+    pcbname=$(basename "$path" .kicad_pcb)
+    local srcdir=$(dirname "$path")
+    local outdir="$srcdir/../render/$pcbname-gerber"
+
+    echo "───── Rendering $pcbname"
+    echo "Output directory: $outdir/"
+    mkdir -p "$outdir"
+    #   Generates all layers, whether needed or not.
+    kicad-cli pcb export gerbers --output "$outdir" "$path"
+    #   The KiCad defaults match what JLCPCB asks for, excepting that
+    #   JLCPCB suggests adding GerberX2 drill maps in as well.
+    kicad-cli pcb export drill \
+        --generate-map --map-format gerberx2 \
+        --output "$outdir" "$path"
+    #   Build ZIP files for submission to fabs.
+    jlcpcb_zip "$pcbname" "$outdir"
+}
+
+jlcpcb_zip() {
+    local pcbname="$1"
+    local outdir="$2"
+    (
+        cd $outdir
+        rm -f ../"$pcbname"-jlcpcb.zip
+        #   We disable ZIP compression because that will make Git's
+        #   compression of the file as it changes much worse.
+        zip  -q -0 ../"$pcbname"-jlcpcb.zip    \
+            *.g[tb]o *.g[tb]s *.g?l         \
+            *.gm1                           \
+            *.drl *-drl_map.gbr             \
+            #
+    )
+}
+
+####################################################################
+#   Main
+
+kicad-cli --version >/dev/null 2>&1 || die 3 "kicad-cli command not found"
+kicad-cli --version >kicad-version
+
+for arg in ${@}; do case "$1" in
+    *.kicad_sch)    render_sch "$1";;
+    *.kicad_pcb)    render_pcb "$1";;
+    *)              die 2 "Unknown file type: $1"
+esac; done

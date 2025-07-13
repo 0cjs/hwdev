@@ -14,25 +14,14 @@ elapsed() { echo $(( $(date +%s) - $elapsed_start )); }
 export REPO=$(cd "$(dirname "$0")" && pwd -P)
 cd "$REPO"
 
+#   `render` doesn't need this, be we need it for running design checks.
 kicad-cli --version >/dev/null 2>&1 || die 3 "kicad-cli command not found"
 kicad-cli --version >kicad-version
 
-for sch in */kicad/*.kicad_sch; do
-    projdir=$(dirname $(dirname "$sch"))
-    basename=$(basename "$sch" .kicad_sch)
-    #   Creates any dirs needed for output path.
-    kicad-cli sch export pdf \
-        --output "$projdir/render/$basename-sch.pdf"  \
-        "$sch"
-    #   KiCad always sets the creation date to the current time, which
-    #   means that this file will be a changed version every time we
-    #   re-run the export, even if nothing in the schematic has actually
-    #   changed. We delete this line so that we don't get a pile of
-    #   "updated" PDFs every time this is run. (Note that this tag being
-    #   bookended by newlines is what KiCad does, but the newlines are
-    #   not a necessary part of PDF syntax.)
-    sed -i -e '/^\/CreationDate (D:..............)$/d' \
-        "$projdir/render/$basename-sch.pdf"
-done
+#   XXX We do not yet always render everyting because `render` doesn't know
+#   not to update the files that will be committed if only the creation
+#   date has changed.
+#./render */kicad/*.kicad_{sch,pcb}
+echo "WARNING: not rendering; this must be done manually for changed files"
 
 echo "OK ($(elapsed)s)"
