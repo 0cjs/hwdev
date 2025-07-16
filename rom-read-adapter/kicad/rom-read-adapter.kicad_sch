@@ -1435,6 +1435,50 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "28\n\n27\n\n26\n\n25\n\n24\n\n23\n\n22\n\n21\n\n20\n\n19\n\n18\n\n17\n\n16\n\n15"
+		(exclude_from_sim no)
+		(at 144.018 123.19 0)
+		(effects
+			(font
+				(size 0.7874 0.7874)
+			)
+			(justify right bottom)
+		)
+		(uuid "05e2a803-1ea3-4432-80fe-baf35bb722b5")
+	)
+	(text "1\n\n2\n\n3\n\n4\n\n5\n\n6\n\n7\n\n8\n\n9\n\n10\n\n11\n\n12"
+		(exclude_from_sim no)
+		(at 136.398 123.19 0)
+		(effects
+			(font
+				(size 0.7874 0.7874)
+			)
+			(justify left bottom)
+		)
+		(uuid "8774771b-00db-48fa-bd7c-a122c01a17bd")
+	)
+	(text "24\n\n23\n\n22\n\n21\n\n20\n\n19\n\n18\n\n17\n\n16\n\n15\n\n14\n\n13"
+		(exclude_from_sim no)
+		(at 140.462 123.19 0)
+		(effects
+			(font
+				(size 0.7874 0.7874)
+			)
+			(justify right bottom)
+		)
+		(uuid "c6201d70-3682-4c50-b75b-0621a538a8a0")
+	)
+	(text "1\n\n2\n\n3\n\n4\n\n5\n\n6\n\n7\n\n8\n\n9\n\n10\n\n11\n\n12\n\n13\n\n14"
+		(exclude_from_sim no)
+		(at 132.842 123.19 0)
+		(effects
+			(font
+				(size 0.7874 0.7874)
+			)
+			(justify left bottom)
+		)
+		(uuid "ddc47287-2cd0-45c6-8862-aa2bad31147c")
+	)
 	(global_label "A16"
 		(shape input)
 		(at 111.76 80.01 180)
@@ -4309,6 +4353,76 @@
 	)
 	(symbol
 		(lib_id "Jumper:Jumper_2_Open")
+		(at 153.67 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b01c1a04-b093-48ab-91cf-14354142c086")
+		(property "Reference" "JP38"
+			(at 153.67 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Jumper_2_Open"
+			(at 153.67 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 153.67 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 153.67 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Jumper, 2-pole, open"
+			(at 153.67 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d5bd3780-a8e7-45c0-9567-f235fadd7c96")
+		)
+		(pin "2"
+			(uuid "cadebf76-4bce-487b-b2f4-ce1d0e75994c")
+		)
+		(instances
+			(project "rom-read-adapter"
+				(path "/65bf6d13-0c24-4e8f-8a57-e3ae2776eac6"
+					(reference "JP38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:Jumper_2_Open")
 		(at 123.19 115.57 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4652,76 +4766,6 @@
 			(project "rom-read-adapter"
 				(path "/65bf6d13-0c24-4e8f-8a57-e3ae2776eac6"
 					(reference "JP35")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:Jumper_2_Open")
-		(at 153.67 87.63 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cb9690ac-6527-42c4-bdf7-9cf3db194b5a")
-		(property "Reference" "JP39"
-			(at 153.67 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Jumper_2_Open"
-			(at 153.67 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 153.67 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 153.67 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Jumper, 2-pole, open"
-			(at 153.67 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e0a111d0-d9da-4968-af26-7010fc7c2035")
-		)
-		(pin "2"
-			(uuid "e3e51378-aaeb-46a5-8cbb-bebabcdb6fca")
-		)
-		(instances
-			(project "rom-read-adapter"
-				(path "/65bf6d13-0c24-4e8f-8a57-e3ae2776eac6"
-					(reference "JP39")
 					(unit 1)
 				)
 			)
@@ -5352,7 +5396,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 158.75 87.63 270)
+		(at 158.75 90.17 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5361,7 +5405,7 @@
 		(fields_autoplaced yes)
 		(uuid "fe632701-b16d-42ae-a71f-f23da10f41ea")
 		(property "Reference" "#PWR39"
-			(at 154.94 87.63 0)
+			(at 154.94 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5370,7 +5414,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 162.56 87.6299 90)
+			(at 162.56 90.1699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5379,7 +5423,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 158.75 87.63 0)
+			(at 158.75 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5388,7 +5432,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 158.75 87.63 0)
+			(at 158.75 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5397,7 +5441,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 158.75 87.63 0)
+			(at 158.75 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
