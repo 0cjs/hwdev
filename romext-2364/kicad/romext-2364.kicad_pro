@@ -52,12 +52,7 @@
         }
       },
       "diff_pair_dimensions": [],
-      "drc_exclusions": [
-        [
-          "lib_footprint_mismatch|134620000|65400000|b5996d07-38d7-4d00-9f38-68dd1457f9fb|00000000-0000-0000-0000-000000000000",
-          "Added ZIF outline on silkscreen"
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -232,6 +227,10 @@
   },
   "erc": {
     "erc_exclusions": [
+      [
+        "footprint_link_issues|1651000|901700|69582586-1a13-4cb2-ac72-8727d94d40be|00000000-0000-0000-0000-000000000000|||",
+        "ZIF socket footprint name is missing the 'mm' after 'W15.24' in the name"
+      ],
       [
         "lib_symbol_mismatch|1206500|889000|e77656bb-cefa-434f-aaf1-eef46701d011|00000000-0000-0000-0000-000000000000|||",
         "Not a socket for a ROM, but connection to a socket for a ROM."
