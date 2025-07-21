@@ -35,20 +35,20 @@ Projects generally include the following files and subdirectories:
 
 ### Revision Numbers
 
-Project use revisions int the format _S.B_ where _S_ is the schematic
+Project use revisions int the format _S-B_ where _S_ is the schematic
 revision and _B_ is the board revision within that scheamtic. Either number
-being suffixed with `dev` or `devN` indicates that it's a development
-version heading towards that next revision, e.g., `2dev3` is development
-towards revision `2`. (Revision `0` is always considered a devleopment
-revision towards revision `1`.)
+being suffixed with `dev` indicates that it's a development revision
+heading towards that next revision, e.g., `2dev-3` is development towards
+revision `2` of the schematic. (Revision `0` is always considered a
+devleopment revision towards revision `1`.)
 
-The version number is set and needs to be updated separately (in _File »
-Page Settings…_) for the schematic and PCB; if you change the schematic
-from `2` to `3` you will then manually need to change the PCB to from `2.3`
-to `3.1`.
+The revision number is separately set and updated (in _File » Page
+Settings…_) for the schematic and PCB. If you change the schematic from `2`
+to `3` you will then manually need to change the PCB to from `2-3` to
+`3-4dev`.
 
-Release versions are tagged in Git with the project name and release, e.g.
-`kp25tk-2.1`.
+Release versions are tagged in Git with the project name and release,
+separated by an underscore, e.g. `kp25tk_2-1`.
 
 
 
