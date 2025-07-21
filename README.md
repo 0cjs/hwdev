@@ -13,6 +13,8 @@ General Files:
 
 Projects:
 - [`drom`]: Ideas for a diode-ROM board.
+- [`floppy-head-protector`]: PCB-only project to build a template to cut
+  out cardboard head travel protectors for 5.25" floppy diskette drives.
 - [`kp25tk`]: Configurable 25-key parallel keypad, with additional reset
   button and slide switch. The primary use is as a hex keypad interface to
   trainer boards, but it can serve a wide variety of purposes.
@@ -54,6 +56,7 @@ separated by an underscore, e.g. `kp25tk_2-1`.
 
 <!-------------------------------------------------------------------->
 [`drom`]: ./drom/
+[`floppy-head-protector`]: ./floppy-head-protector/
 [`kp25tk`]: ./kp25tk/
 [`rc6800`]: ./rc6800/
 [`romext-2364`]: ./romext-2364/
