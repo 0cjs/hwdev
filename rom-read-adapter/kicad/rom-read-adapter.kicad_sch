@@ -1058,6 +1058,362 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:Conn_01x04_Pin"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x04_Pin"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x04, script generated"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x04_Pin_1_1"
+				(rectangle
+					(start 0.8636 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 2.54) (xy 0.8636 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -5.08) (xy 0.8636 -5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -5.08 180)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Header_Pin_2"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "JPA37"
+				(at -5.08 -1.2701 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+					(hide yes)
+				)
+			)
+			(property "Value" "Header_Pin"
+				(at -5.08 1.2699 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+					(hide yes)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Header Pin"
+				(at 0.254 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Jumper SPST"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Jumper* TestPoint*2Pads* TestPoint*Bridge*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Header_Pin_2_0_0"
+				(circle
+					(center 0 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Header_Pin_2_1_1"
+				(pin passive line
+					(at 0 0 180)
+					(length 0)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Jumper:Jumper_2_Open"
 			(pin_numbers
 				(hide yes)
@@ -1479,9 +1835,67 @@
 		)
 		(uuid "ddc47287-2cd0-45c6-8862-aa2bad31147c")
 	)
-	(global_label "A16"
+	(junction
+		(at 177.8 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "19ea926d-a375-449b-810b-59610ac639a1")
+	)
+	(junction
+		(at 175.26 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "de8a73e3-c9e2-4b9a-9f40-e71c9592d277")
+	)
+	(junction
+		(at 172.72 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fb06f3e0-557b-4730-8a2e-fc9bb52756c3")
+	)
+	(wire
+		(pts
+			(xy 172.72 90.17) (xy 175.26 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8bfa8209-d4de-4ed3-ae99-643d0c3ead8a")
+	)
+	(wire
+		(pts
+			(xy 177.8 90.17) (xy 182.88 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9341fc84-c38a-4e47-963e-59b5b2e6297f")
+	)
+	(wire
+		(pts
+			(xy 175.26 90.17) (xy 177.8 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c705d83d-b036-40f6-b1e0-637c5e2424f8")
+	)
+	(wire
+		(pts
+			(xy 170.18 90.17) (xy 172.72 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e61708de-b2ec-444f-aef7-5979b505bbdd")
+	)
+	(global_label "A6"
 		(shape input)
-		(at 111.76 80.01 180)
+		(at 104.14 67.31 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1489,9 +1903,53 @@
 			)
 			(justify right)
 		)
+		(uuid "04bbb79f-b7c6-4290-8f1a-7379b1933a08")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 98.8567 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "A16"
+		(shape input)
+		(at 180.34 78.74 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
 		(uuid "0dfc28b0-affd-4031-8a79-32cad001ecae")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 105.2672 80.01 0)
+			(at 186.8328 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "A4"
+		(shape input)
+		(at 104.14 72.39 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "12abb6fc-1ee1-4e1c-8518-a2fd9d66846e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 98.8567 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1503,7 +1961,7 @@
 	)
 	(global_label "D14"
 		(shape input)
-		(at 180.34 107.95 0)
+		(at 180.34 105.41 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1513,7 +1971,7 @@
 		)
 		(uuid "1d98e1b2-caab-433d-96aa-666ba9bd3d08")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 187.0142 107.95 0)
+			(at 187.0142 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1525,22 +1983,22 @@
 	)
 	(global_label "A15"
 		(shape input)
-		(at 111.76 82.55 180)
+		(at 180.34 73.66 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "1fdf955c-66d5-404b-a484-34fdca452ebb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 105.2672 82.55 0)
+			(at 186.8328 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -1613,7 +2071,7 @@
 	)
 	(global_label "D15"
 		(shape input)
-		(at 180.34 105.41 0)
+		(at 180.34 102.87 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1623,7 +2081,7 @@
 		)
 		(uuid "28d3ea69-1a69-489f-b875-484915720e96")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 187.0142 105.41 0)
+			(at 187.0142 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1655,7 +2113,51 @@
 			)
 		)
 	)
-	(global_label "D10"
+	(global_label "A8"
+		(shape input)
+		(at 180.34 53.34 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "364ea795-40c6-489e-802b-2436e8bfd97c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 185.6233 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D11"
+		(shape input)
+		(at 104.14 121.92 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "39ed15bc-63ca-42a3-9028-47164010ce4d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 97.4658 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D6"
 		(shape input)
 		(at 180.34 118.11 0)
 		(fields_autoplaced yes)
@@ -1667,7 +2169,29 @@
 		)
 		(uuid "41fa6579-44d1-4999-a101-8c1c54319153")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 187.0142 118.11 0)
+			(at 185.8047 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GND"
+		(shape input)
+		(at 185.42 92.71 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "43b45bb7-3632-4583-b87d-9b6a5755796e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 192.2757 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1701,7 +2225,7 @@
 	)
 	(global_label "D12"
 		(shape input)
-		(at 180.34 113.03 0)
+		(at 180.34 110.49 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1711,7 +2235,29 @@
 		)
 		(uuid "4780cfa7-bf7d-4449-9760-9346f2ac1acc")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 187.0142 113.03 0)
+			(at 187.0142 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "A12"
+		(shape input)
+		(at 180.34 66.04 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4ac40f56-2f5c-4d7f-b3ff-49e14108d8bc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 186.8328 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1743,7 +2289,29 @@
 			)
 		)
 	)
-	(global_label "D8"
+	(global_label "A9"
+		(shape input)
+		(at 180.34 55.88 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5cc07304-b302-4d8d-bc5a-de27c1936a4a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 185.6233 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D4"
 		(shape input)
 		(at 180.34 123.19 0)
 		(fields_autoplaced yes)
@@ -1778,6 +2346,50 @@
 		(uuid "6795adb4-35c1-4d4b-bedc-dac7efba8165")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 112.8267 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "A3"
+		(shape input)
+		(at 104.14 77.47 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6dbff747-b42c-4d7d-bdf6-b170340e192b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 98.8567 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D1"
+		(shape input)
+		(at 104.14 104.14 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7116ee98-4d99-47a1-9f8a-739a9dc84cfc")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 98.6753 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1831,6 +2443,28 @@
 			)
 		)
 	)
+	(global_label "CS"
+		(shape input)
+		(at 185.42 96.52 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "761d8cb2-323d-49d1-898e-01b039cf0182")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 190.8847 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "D4"
 		(shape input)
 		(at 158.75 120.65 0)
@@ -1853,9 +2487,9 @@
 			)
 		)
 	)
-	(global_label "A20"
+	(global_label "A0"
 		(shape input)
-		(at 111.76 69.85 180)
+		(at 104.14 85.09 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1863,9 +2497,31 @@
 			)
 			(justify right)
 		)
-		(uuid "7d149f3c-3c19-4520-a30d-f18431f4aa55")
+		(uuid "7f8ad800-b576-4c7f-aa76-7bb08f79b035")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 105.2672 69.85 0)
+			(at 98.8567 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "A2"
+		(shape input)
+		(at 104.14 80.01 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "80b50c00-3c21-4039-bec8-f27ce0abf43d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 98.8567 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1877,7 +2533,29 @@
 	)
 	(global_label "A18"
 		(shape input)
-		(at 111.76 74.93 180)
+		(at 180.34 83.82 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8c9c36d7-ce85-46ff-9b01-8acafb9f7c1d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 186.8328 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D0"
+		(shape input)
+		(at 104.14 101.6 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1885,14 +2563,36 @@
 			)
 			(justify right)
 		)
-		(uuid "8c9c36d7-ce85-46ff-9b01-8acafb9f7c1d")
+		(uuid "90c8ad86-046b-470e-9f81-eedd4e010a43")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 105.2672 74.93 0)
+			(at 98.6753 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "A10"
+		(shape input)
+		(at 180.34 58.42 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9638ff7d-24ce-4a5b-8f9b-4d225614de62")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 186.8328 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -1921,66 +2621,88 @@
 	)
 	(global_label "A13"
 		(shape input)
-		(at 111.76 87.63 180)
+		(at 180.34 68.58 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "9b62f30b-de4f-421d-9966-bb4cfcc65ed1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 105.2672 87.63 0)
+			(at 186.8328 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
 	)
 	(global_label "A14"
 		(shape input)
-		(at 111.76 85.09 180)
+		(at 180.34 71.12 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "9bad914f-42a2-420c-941f-a9ee9bd76f13")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 105.2672 85.09 0)
+			(at 186.8328 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
 	)
 	(global_label "A19"
 		(shape input)
-		(at 111.76 72.39 180)
+		(at 180.34 86.36 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "9bbe7e5c-15de-43ed-a11b-6d17317d84e4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 105.2672 72.39 0)
+			(at 186.8328 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "A11"
+		(shape input)
+		(at 180.34 60.96 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a0cb3bc9-b4c9-4729-be93-32f589688963")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 186.8328 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -2073,7 +2795,29 @@
 			)
 		)
 	)
-	(global_label "D9"
+	(global_label "D10"
+		(shape input)
+		(at 104.14 119.38 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b201ef82-c090-48db-b608-a987bca6821d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 97.4658 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D5"
 		(shape input)
 		(at 180.34 120.65 0)
 		(fields_autoplaced yes)
@@ -2095,6 +2839,28 @@
 			)
 		)
 	)
+	(global_label "D8"
+		(shape input)
+		(at 104.14 114.3 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bd01bd7b-572b-4ea3-8e60-f5f80c7e1802")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 98.6753 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "D6"
 		(shape input)
 		(at 158.75 115.57 0)
@@ -2108,6 +2874,28 @@
 		(uuid "beb3abeb-083b-4105-98d7-13507f6ce4ce")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 164.2147 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "~{CS}"
+		(shape input)
+		(at 158.75 105.41 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c1a7f7fd-b65f-4eff-b026-c2ca43530916")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 164.2147 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2141,7 +2929,29 @@
 	)
 	(global_label "A17"
 		(shape input)
-		(at 111.76 77.47 180)
+		(at 180.34 81.28 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cbd716f4-6a0d-43e0-b2fe-4d380a268792")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 186.8328 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D3"
+		(shape input)
+		(at 104.14 109.22 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2149,9 +2959,9 @@
 			)
 			(justify right)
 		)
-		(uuid "cbd716f4-6a0d-43e0-b2fe-4d380a268792")
+		(uuid "cdb5a83c-7c21-436b-bc99-1a05b82d0828")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 105.2672 77.47 0)
+			(at 98.6753 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2183,6 +2993,28 @@
 			)
 		)
 	)
+	(global_label "D9"
+		(shape input)
+		(at 104.14 116.84 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ce9cfa36-d6d0-4fb9-a5b8-3a6f53a23863")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 98.6753 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "D7"
 		(shape input)
 		(at 158.75 113.03 0)
@@ -2201,6 +3033,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "A1"
+		(shape input)
+		(at 104.14 82.55 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d5f87eff-4a10-468c-bd28-ff160cb2599b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 98.8567 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -2227,9 +3081,53 @@
 			)
 		)
 	)
-	(global_label "D13"
+	(global_label "D2"
 		(shape input)
-		(at 180.34 110.49 0)
+		(at 104.14 106.68 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "dcb9d15d-5d1b-4320-8899-cdc4a7b76e16")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 98.6753 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "A7"
+		(shape input)
+		(at 104.14 64.77 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e3873285-09fd-40bf-9bd5-e8ae7af7c83f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 98.8567 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VCC"
+		(shape input)
+		(at 182.88 90.17 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2237,9 +3135,9 @@
 			)
 			(justify left)
 		)
-		(uuid "e8f8ebc3-d4f4-4ddc-babb-1bd814bba21e")
+		(uuid "e41b934e-9c0c-43fa-bfb5-ebc8690819b5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 187.0142 110.49 0)
+			(at 189.4938 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2249,7 +3147,51 @@
 			)
 		)
 	)
-	(global_label "D11"
+	(global_label "D13"
+		(shape input)
+		(at 180.34 107.95 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e8f8ebc3-d4f4-4ddc-babb-1bd814bba21e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 187.0142 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "A5"
+		(shape input)
+		(at 104.14 69.85 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f17d1987-a5f7-43f4-8284-ba84dd9d34a5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 98.8567 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D7"
 		(shape input)
 		(at 180.34 115.57 0)
 		(fields_autoplaced yes)
@@ -2261,7 +3203,29 @@
 		)
 		(uuid "f6f03c75-4de2-4d1c-8ea2-5c651224a790")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 187.0142 115.57 0)
+			(at 185.8047 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "~{CS}"
+		(shape input)
+		(at 185.42 99.06 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f9c1c529-7bab-4f80-867a-40095959a62d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 190.8847 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2482,6 +3446,145 @@
 	)
 	(symbol
 		(lib_id "0cjs-hwdev:Header_Pin")
+		(at 104.14 80.01 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0c660d91-ec59-434c-a5e2-186739841f7e")
+		(property "Reference" "JPA26"
+			(at 109.22 78.7399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Value" "Header_Pin"
+			(at 109.22 81.2799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 104.14 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 104.14 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Header Pin"
+			(at 104.14 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "150075c8-83cd-4e3e-b2d7-13229945b83f")
+		)
+		(instances
+			(project "rom-read-adapter"
+				(path "/65bf6d13-0c24-4e8f-8a57-e3ae2776eac6"
+					(reference "JPA26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "Header_Pin_2")
+		(lib_id "0cjs-hwdev:Header_Pin")
+		(at 175.26 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1061a7d6-ddca-42a6-9360-388f5f301f1d")
+		(property "Reference" "JPA41"
+			(at 170.18 91.4401 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Value" "Header_Pin"
+			(at 170.18 88.9001 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 175.26 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 175.26 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Header Pin"
+			(at 175.514 86.614 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f4e0f989-8188-4dc1-891d-e306175200ae")
+		)
+		(instances
+			(project "rom-read-adapter"
+				(path "/65bf6d13-0c24-4e8f-8a57-e3ae2776eac6"
+					(reference "JPA41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "0cjs-hwdev:Header_Pin")
 		(at 180.34 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2691,7 +3794,7 @@
 	)
 	(symbol
 		(lib_id "0cjs-hwdev:Header_Pin")
-		(at 180.34 107.95 0)
+		(at 180.34 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2700,16 +3803,6 @@
 		(fields_autoplaced yes)
 		(uuid "2dc9461b-7b67-49ef-9857-791164769241")
 		(property "Reference" "JPA15"
-			(at 175.26 109.2201 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Value" "Header_Pin"
 			(at 175.26 106.6801 0)
 			(effects
 				(font
@@ -2719,8 +3812,18 @@
 				(hide yes)
 			)
 		)
+		(property "Value" "Header_Pin"
+			(at 175.26 104.1401 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
 		(property "Footprint" ""
-			(at 180.34 107.95 0)
+			(at 180.34 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2729,7 +3832,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 180.34 107.95 0)
+			(at 180.34 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2738,7 +3841,7 @@
 			)
 		)
 		(property "Description" "Header Pin"
-			(at 180.34 107.95 0)
+			(at 180.34 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2829,7 +3932,7 @@
 	)
 	(symbol
 		(lib_id "0cjs-hwdev:Header_Pin")
-		(at 111.76 72.39 180)
+		(at 180.34 86.36 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2838,7 +3941,7 @@
 		(fields_autoplaced yes)
 		(uuid "31aaf7d6-6cdd-42d1-adcd-62737dfd98bb")
 		(property "Reference" "JPA6"
-			(at 116.84 71.1199 0)
+			(at 175.26 87.6301 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2848,7 +3951,7 @@
 			)
 		)
 		(property "Value" "Header_Pin"
-			(at 116.84 73.6599 0)
+			(at 175.26 85.0901 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2858,7 +3961,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 111.76 72.39 0)
+			(at 180.34 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2867,7 +3970,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 111.76 72.39 0)
+			(at 180.34 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2876,7 +3979,7 @@
 			)
 		)
 		(property "Description" "Header Pin"
-			(at 111.76 72.39 0)
+			(at 180.34 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2964,7 +4067,7 @@
 	)
 	(symbol
 		(lib_id "0cjs-hwdev:Header_Pin")
-		(at 111.76 80.01 180)
+		(at 180.34 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2973,7 +4076,7 @@
 		(fields_autoplaced yes)
 		(uuid "36aff30f-a40e-44cb-96cd-02da01eafac5")
 		(property "Reference" "JPA3"
-			(at 116.84 78.7399 0)
+			(at 175.26 80.0101 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2983,7 +4086,7 @@
 			)
 		)
 		(property "Value" "Header_Pin"
-			(at 116.84 81.2799 0)
+			(at 175.26 77.4701 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2993,7 +4096,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 111.76 80.01 0)
+			(at 180.34 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3002,7 +4105,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 111.76 80.01 0)
+			(at 180.34 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3011,7 +4114,7 @@
 			)
 		)
 		(property "Description" "Header Pin"
-			(at 111.76 80.01 0)
+			(at 180.34 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3033,7 +4136,7 @@
 	)
 	(symbol
 		(lib_id "0cjs-hwdev:Header_Pin")
-		(at 180.34 105.41 0)
+		(at 180.34 102.87 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3042,16 +4145,6 @@
 		(fields_autoplaced yes)
 		(uuid "38053843-ff55-4163-a7aa-32fc74c219a2")
 		(property "Reference" "JPA16"
-			(at 175.26 106.6801 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Value" "Header_Pin"
 			(at 175.26 104.1401 0)
 			(effects
 				(font
@@ -3061,8 +4154,18 @@
 				(hide yes)
 			)
 		)
+		(property "Value" "Header_Pin"
+			(at 175.26 101.6001 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
 		(property "Footprint" ""
-			(at 180.34 105.41 0)
+			(at 180.34 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3071,7 +4174,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 180.34 105.41 0)
+			(at 180.34 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3080,7 +4183,7 @@
 			)
 		)
 		(property "Description" "Header Pin"
-			(at 180.34 105.41 0)
+			(at 180.34 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3095,6 +4198,80 @@
 			(project "rom-read-adapter"
 				(path "/65bf6d13-0c24-4e8f-8a57-e3ae2776eac6"
 					(reference "JPA16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x04_Pin")
+		(at 109.22 67.31 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "399dc01b-7bd1-4649-ad0e-2401507540f3")
+		(property "Reference" "J2"
+			(at 108.585 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x04_Pin"
+			(at 108.585 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 109.22 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 109.22 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 109.22 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "0521b1ec-be70-49bf-91ee-12cc3ff9c98e")
+		)
+		(pin "2"
+			(uuid "24c563e0-3262-47a8-ad4f-29f4c48dc376")
+		)
+		(pin "1"
+			(uuid "97f19c2b-e1f7-4dbf-ab33-c58b93083e8e")
+		)
+		(pin "4"
+			(uuid "6c094136-695a-458a-b2e9-d93e2cbb4d0d")
+		)
+		(instances
+			(project ""
+				(path "/65bf6d13-0c24-4e8f-8a57-e3ae2776eac6"
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -3308,6 +4485,75 @@
 		)
 	)
 	(symbol
+		(lib_id "0cjs-hwdev:Header_Pin")
+		(at 185.42 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "52016dd2-8862-4ad1-aa67-75a02850eae6")
+		(property "Reference" "JPA40"
+			(at 180.34 100.3301 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Value" "Header_Pin"
+			(at 180.34 97.7901 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 185.42 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 185.42 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Header Pin"
+			(at 185.42 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f58b0171-318c-4870-ad5b-139d709fa698")
+		)
+		(instances
+			(project "rom-read-adapter"
+				(path "/65bf6d13-0c24-4e8f-8a57-e3ae2776eac6"
+					(reference "JPA40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Jumper:Jumper_2_Open")
 		(at 153.67 107.95 0)
 		(unit 1)
@@ -3447,6 +4693,75 @@
 		)
 	)
 	(symbol
+		(lib_id "0cjs-hwdev:Header_Pin")
+		(at 180.34 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6461e77e-4e51-49ea-b793-511533177035")
+		(property "Reference" "JPA7"
+			(at 175.26 67.3101 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Value" "Header_Pin"
+			(at 175.26 64.7701 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 180.34 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 180.34 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Header Pin"
+			(at 180.34 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c6d124bb-82b8-4b55-94d0-e6478e731e25")
+		)
+		(instances
+			(project "rom-read-adapter"
+				(path "/65bf6d13-0c24-4e8f-8a57-e3ae2776eac6"
+					(reference "JPA7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Jumper:Jumper_2_Open")
 		(at 153.67 113.03 0)
 		(unit 1)
@@ -3518,16 +4833,16 @@
 	)
 	(symbol
 		(lib_id "0cjs-hwdev:Header_Pin")
-		(at 111.76 69.85 180)
+		(at 104.14 114.3 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "74254f98-2931-4304-8e3c-f0829037bd70")
-		(property "Reference" "JPA7"
-			(at 116.84 68.5799 0)
+		(uuid "6900003c-23bf-498e-a24f-88149581af8e")
+		(property "Reference" "JPA29"
+			(at 109.22 113.0299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3537,7 +4852,7 @@
 			)
 		)
 		(property "Value" "Header_Pin"
-			(at 116.84 71.1199 0)
+			(at 109.22 115.5699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3547,7 +4862,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 111.76 69.85 0)
+			(at 104.14 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3556,7 +4871,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 111.76 69.85 0)
+			(at 104.14 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3565,7 +4880,7 @@
 			)
 		)
 		(property "Description" "Header Pin"
-			(at 111.76 69.85 0)
+			(at 104.14 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3574,12 +4889,12 @@
 			)
 		)
 		(pin "2"
-			(uuid "d69b0ed8-5ec0-4fa1-8eb2-48e3b9888484")
+			(uuid "b70e38a2-76a6-4ade-a641-d9365a0651a5")
 		)
 		(instances
 			(project "rom-read-adapter"
 				(path "/65bf6d13-0c24-4e8f-8a57-e3ae2776eac6"
-					(reference "JPA7")
+					(reference "JPA29")
 					(unit 1)
 				)
 			)
@@ -3587,16 +4902,16 @@
 	)
 	(symbol
 		(lib_id "0cjs-hwdev:Header_Pin")
-		(at 111.76 87.63 180)
+		(at 104.14 106.68 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "76f14a11-d224-472d-aebb-0a2df9d17f84")
-		(property "Reference" "JPA13"
-			(at 116.84 86.3599 0)
+		(uuid "74d7110c-2ef4-4a99-b79a-0a42314e8ca0")
+		(property "Reference" "JPA35"
+			(at 109.22 105.4099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3606,7 +4921,7 @@
 			)
 		)
 		(property "Value" "Header_Pin"
-			(at 116.84 88.8999 0)
+			(at 109.22 107.9499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3616,7 +4931,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 111.76 87.63 0)
+			(at 104.14 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3625,7 +4940,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 111.76 87.63 0)
+			(at 104.14 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3634,7 +4949,76 @@
 			)
 		)
 		(property "Description" "Header Pin"
-			(at 111.76 87.63 0)
+			(at 104.14 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "fb0db9aa-233d-401e-8e5f-a390b783699b")
+		)
+		(instances
+			(project "rom-read-adapter"
+				(path "/65bf6d13-0c24-4e8f-8a57-e3ae2776eac6"
+					(reference "JPA35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "0cjs-hwdev:Header_Pin")
+		(at 180.34 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "76f14a11-d224-472d-aebb-0a2df9d17f84")
+		(property "Reference" "JPA13"
+			(at 175.26 69.8501 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Value" "Header_Pin"
+			(at 175.26 67.3101 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 180.34 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 180.34 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Header Pin"
+			(at 180.34 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3656,7 +5040,7 @@
 	)
 	(symbol
 		(lib_id "0cjs-hwdev:Header_Pin")
-		(at 111.76 82.55 180)
+		(at 180.34 73.66 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3665,7 +5049,7 @@
 		(fields_autoplaced yes)
 		(uuid "778812ea-5597-45c5-8b5f-c782259aa366")
 		(property "Reference" "JPA2"
-			(at 116.84 81.2799 0)
+			(at 175.26 74.9301 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3675,7 +5059,7 @@
 			)
 		)
 		(property "Value" "Header_Pin"
-			(at 116.84 83.8199 0)
+			(at 175.26 72.3901 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3685,7 +5069,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 111.76 82.55 0)
+			(at 180.34 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3694,7 +5078,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 111.76 82.55 0)
+			(at 180.34 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3703,7 +5087,7 @@
 			)
 		)
 		(property "Description" "Header Pin"
-			(at 111.76 82.55 0)
+			(at 180.34 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3794,6 +5178,75 @@
 		)
 	)
 	(symbol
+		(lib_id "0cjs-hwdev:Header_Pin")
+		(at 104.14 101.6 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7a6ea237-5cb8-48df-8eb8-5b85979465ab")
+		(property "Reference" "JPA33"
+			(at 109.22 100.3299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Value" "Header_Pin"
+			(at 109.22 102.8699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 104.14 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 104.14 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Header Pin"
+			(at 104.14 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8e732cdd-e197-4261-ab36-850757466881")
+		)
+		(instances
+			(project "rom-read-adapter"
+				(path "/65bf6d13-0c24-4e8f-8a57-e3ae2776eac6"
+					(reference "JPA33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Jumper:Jumper_2_Open")
 		(at 123.19 110.49 0)
 		(unit 1)
@@ -3865,16 +5318,16 @@
 	)
 	(symbol
 		(lib_id "0cjs-hwdev:Header_Pin")
-		(at 180.34 110.49 0)
+		(at 185.42 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "871aa1ae-df60-49bb-a665-b16e9017fe12")
-		(property "Reference" "JPA14"
-			(at 175.26 111.7601 0)
+		(uuid "7f88d0d8-dc86-41c9-9092-5b06171c96fc")
+		(property "Reference" "JPA39"
+			(at 180.34 97.7901 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3884,7 +5337,7 @@
 			)
 		)
 		(property "Value" "Header_Pin"
-			(at 175.26 109.2201 0)
+			(at 180.34 95.2501 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3894,7 +5347,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 180.34 110.49 0)
+			(at 185.42 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3903,7 +5356,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 180.34 110.49 0)
+			(at 185.42 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3912,7 +5365,145 @@
 			)
 		)
 		(property "Description" "Header Pin"
-			(at 180.34 110.49 0)
+			(at 185.42 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f57a6845-80f0-470d-9548-6fd5a956ff32")
+		)
+		(instances
+			(project "rom-read-adapter"
+				(path "/65bf6d13-0c24-4e8f-8a57-e3ae2776eac6"
+					(reference "JPA39")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "0cjs-hwdev:Header_Pin")
+		(at 180.34 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8580aafc-1b35-4dc5-8a5a-7fcea31aa39e")
+		(property "Reference" "JPA17"
+			(at 175.26 62.2301 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Value" "Header_Pin"
+			(at 175.26 59.6901 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 180.34 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 180.34 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Header Pin"
+			(at 180.34 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8b1c2bfa-0ac2-4117-8cef-1797d293014a")
+		)
+		(instances
+			(project "rom-read-adapter"
+				(path "/65bf6d13-0c24-4e8f-8a57-e3ae2776eac6"
+					(reference "JPA17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "0cjs-hwdev:Header_Pin")
+		(at 180.34 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "871aa1ae-df60-49bb-a665-b16e9017fe12")
+		(property "Reference" "JPA14"
+			(at 175.26 109.2201 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Value" "Header_Pin"
+			(at 175.26 106.6801 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 180.34 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 180.34 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Header Pin"
+			(at 180.34 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4004,7 +5595,7 @@
 	)
 	(symbol
 		(lib_id "0cjs-hwdev:Header_Pin")
-		(at 111.76 77.47 180)
+		(at 180.34 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4013,7 +5604,7 @@
 		(fields_autoplaced yes)
 		(uuid "95095091-e0e5-4806-9ebb-63ca05983665")
 		(property "Reference" "JPA4"
-			(at 116.84 76.1999 0)
+			(at 175.26 82.5501 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4023,7 +5614,7 @@
 			)
 		)
 		(property "Value" "Header_Pin"
-			(at 116.84 78.7399 0)
+			(at 175.26 80.0101 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4033,7 +5624,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 111.76 77.47 0)
+			(at 180.34 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4042,7 +5633,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 111.76 77.47 0)
+			(at 180.34 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4051,7 +5642,7 @@
 			)
 		)
 		(property "Description" "Header Pin"
-			(at 111.76 77.47 0)
+			(at 180.34 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4212,6 +5803,145 @@
 		)
 	)
 	(symbol
+		(lib_id "0cjs-hwdev:Header_Pin")
+		(at 104.14 116.84 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a50f56b8-7066-47a1-b781-0ac76aa6b6a9")
+		(property "Reference" "JPA30"
+			(at 109.22 115.5699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Value" "Header_Pin"
+			(at 109.22 118.1099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 104.14 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 104.14 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Header Pin"
+			(at 104.14 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8a142cb5-b0d6-40f8-90bc-51a3c52a2d4a")
+		)
+		(instances
+			(project "rom-read-adapter"
+				(path "/65bf6d13-0c24-4e8f-8a57-e3ae2776eac6"
+					(reference "JPA30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:Jumper_2_Open")
+		(at 153.67 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aa5bf387-106e-4506-829c-5ef70c58152b")
+		(property "Reference" "JP32"
+			(at 153.67 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Jumper_2_Open"
+			(at 153.67 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 153.67 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 153.67 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Jumper, 2-pole, open"
+			(at 153.67 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5229665b-087d-4516-9fa4-913cb6c6eac9")
+		)
+		(pin "2"
+			(uuid "7dd2d1eb-4411-4cd7-aa3a-56af63530d5a")
+		)
+		(instances
+			(project "rom-read-adapter"
+				(path "/65bf6d13-0c24-4e8f-8a57-e3ae2776eac6"
+					(reference "JP32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Jumper:Jumper_2_Open")
 		(at 123.19 107.95 0)
 		(unit 1)
@@ -4352,6 +6082,75 @@
 		)
 	)
 	(symbol
+		(lib_id "0cjs-hwdev:Header_Pin")
+		(at 180.34 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b003ea91-cb8a-4c6b-822c-03caeca94da3")
+		(property "Reference" "JPA18"
+			(at 175.26 59.6901 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Value" "Header_Pin"
+			(at 175.26 57.1501 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 180.34 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 180.34 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Header Pin"
+			(at 180.34 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2c5dfbfe-840f-4943-9399-54051d5e09b5")
+		)
+		(instances
+			(project "rom-read-adapter"
+				(path "/65bf6d13-0c24-4e8f-8a57-e3ae2776eac6"
+					(reference "JPA18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Jumper:Jumper_2_Open")
 		(at 153.67 90.17 0)
 		(unit 1)
@@ -4422,6 +6221,75 @@
 		)
 	)
 	(symbol
+		(lib_id "0cjs-hwdev:Header_Pin")
+		(at 180.34 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b7cb4235-267d-449c-8d19-d626616085c1")
+		(property "Reference" "JPA20"
+			(at 175.26 54.6101 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Value" "Header_Pin"
+			(at 175.26 52.0701 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 180.34 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 180.34 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Header Pin"
+			(at 180.34 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2263fdc9-f84d-40b8-a490-ed5962f1ec6a")
+		)
+		(instances
+			(project "rom-read-adapter"
+				(path "/65bf6d13-0c24-4e8f-8a57-e3ae2776eac6"
+					(reference "JPA20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Jumper:Jumper_2_Open")
 		(at 123.19 115.57 0)
 		(unit 1)
@@ -4486,6 +6354,145 @@
 			(project "rom-read-adapter"
 				(path "/65bf6d13-0c24-4e8f-8a57-e3ae2776eac6"
 					(reference "JP21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "Header_Pin_2")
+		(lib_id "0cjs-hwdev:Header_Pin")
+		(at 170.18 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bd0b439e-2925-471c-bb24-681b547b85cb")
+		(property "Reference" "JPA43"
+			(at 165.1 91.4401 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Value" "Header_Pin"
+			(at 165.1 88.9001 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 170.18 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 170.18 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Header Pin"
+			(at 170.434 86.614 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b1a2eb9d-1ac4-4e26-ac6c-511911fcffc7")
+		)
+		(instances
+			(project "rom-read-adapter"
+				(path "/65bf6d13-0c24-4e8f-8a57-e3ae2776eac6"
+					(reference "JPA43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "0cjs-hwdev:Header_Pin")
+		(at 180.34 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c37f570b-e918-4d7a-bad2-8a31680c50d0")
+		(property "Reference" "JPA19"
+			(at 175.26 57.1501 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Value" "Header_Pin"
+			(at 175.26 54.6101 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 180.34 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 180.34 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Header Pin"
+			(at 180.34 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4c0933ef-f920-48c9-8066-ac3c17d56934")
+		)
+		(instances
+			(project "rom-read-adapter"
+				(path "/65bf6d13-0c24-4e8f-8a57-e3ae2776eac6"
+					(reference "JPA19")
 					(unit 1)
 				)
 			)
@@ -4626,6 +6633,75 @@
 			(project "rom-read-adapter"
 				(path "/65bf6d13-0c24-4e8f-8a57-e3ae2776eac6"
 					(reference "JP27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "0cjs-hwdev:Header_Pin")
+		(at 104.14 77.47 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c50746bb-a5cd-492c-8166-7e62ec6c95a5")
+		(property "Reference" "JPA25"
+			(at 109.22 76.1999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Value" "Header_Pin"
+			(at 109.22 78.7399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 104.14 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 104.14 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Header Pin"
+			(at 104.14 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "cf84e853-27da-4eed-8b80-75001c17f71d")
+		)
+		(instances
+			(project "rom-read-adapter"
+				(path "/65bf6d13-0c24-4e8f-8a57-e3ae2776eac6"
+					(reference "JPA25")
 					(unit 1)
 				)
 			)
@@ -4979,17 +7055,18 @@
 		)
 	)
 	(symbol
+		(lib_name "Header_Pin_2")
 		(lib_id "0cjs-hwdev:Header_Pin")
-		(at 111.76 74.93 180)
+		(at 177.8 90.17 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "d9de3f1d-7adf-4f17-8e90-130baab9ec2b")
-		(property "Reference" "JPA5"
-			(at 116.84 73.6599 0)
+		(uuid "d7d56820-2a31-4588-9636-f64494b1f66d")
+		(property "Reference" "JPA37"
+			(at 172.72 91.4401 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4999,7 +7076,7 @@
 			)
 		)
 		(property "Value" "Header_Pin"
-			(at 116.84 76.1999 0)
+			(at 172.72 88.9001 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5009,7 +7086,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 111.76 74.93 0)
+			(at 177.8 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5018,7 +7095,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 111.76 74.93 0)
+			(at 177.8 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5027,7 +7104,76 @@
 			)
 		)
 		(property "Description" "Header Pin"
-			(at 111.76 74.93 0)
+			(at 178.054 86.614 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b7ddfce8-157e-4427-9ca8-c540c558ffd2")
+		)
+		(instances
+			(project "rom-read-adapter"
+				(path "/65bf6d13-0c24-4e8f-8a57-e3ae2776eac6"
+					(reference "JPA37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "0cjs-hwdev:Header_Pin")
+		(at 180.34 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d9de3f1d-7adf-4f17-8e90-130baab9ec2b")
+		(property "Reference" "JPA5"
+			(at 175.26 85.0901 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Value" "Header_Pin"
+			(at 175.26 82.5501 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 180.34 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 180.34 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Header Pin"
+			(at 180.34 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5049,7 +7195,7 @@
 	)
 	(symbol
 		(lib_id "0cjs-hwdev:Header_Pin")
-		(at 180.34 113.03 0)
+		(at 180.34 110.49 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5058,16 +7204,6 @@
 		(fields_autoplaced yes)
 		(uuid "dcb08d13-e76d-4fe4-b0a3-59fb2897e991")
 		(property "Reference" "JPA12"
-			(at 175.26 114.3001 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Value" "Header_Pin"
 			(at 175.26 111.7601 0)
 			(effects
 				(font
@@ -5077,8 +7213,18 @@
 				(hide yes)
 			)
 		)
+		(property "Value" "Header_Pin"
+			(at 175.26 109.2201 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
 		(property "Footprint" ""
-			(at 180.34 113.03 0)
+			(at 180.34 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5087,7 +7233,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 180.34 113.03 0)
+			(at 180.34 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5096,7 +7242,7 @@
 			)
 		)
 		(property "Description" "Header Pin"
-			(at 180.34 113.03 0)
+			(at 180.34 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5257,7 +7403,7 @@
 	)
 	(symbol
 		(lib_id "0cjs-hwdev:Header_Pin")
-		(at 111.76 85.09 180)
+		(at 180.34 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5266,7 +7412,7 @@
 		(fields_autoplaced yes)
 		(uuid "e4a40b00-c3bd-4a1b-8389-a0790dcd69e8")
 		(property "Reference" "JPA1"
-			(at 116.84 83.8199 0)
+			(at 175.26 72.3901 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5276,7 +7422,7 @@
 			)
 		)
 		(property "Value" "Header_Pin"
-			(at 116.84 86.3599 0)
+			(at 175.26 69.8501 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5286,7 +7432,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 111.76 85.09 0)
+			(at 180.34 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5295,7 +7441,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 111.76 85.09 0)
+			(at 180.34 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5304,7 +7450,7 @@
 			)
 		)
 		(property "Description" "Header Pin"
-			(at 111.76 85.09 0)
+			(at 180.34 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5319,6 +7465,352 @@
 			(project "rom-read-adapter"
 				(path "/65bf6d13-0c24-4e8f-8a57-e3ae2776eac6"
 					(reference "JPA1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "0cjs-hwdev:Header_Pin")
+		(at 104.14 82.55 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ec613622-bd75-4e4c-9445-4ea53ca3b2e1")
+		(property "Reference" "JPA27"
+			(at 109.22 81.2799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Value" "Header_Pin"
+			(at 109.22 83.8199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 104.14 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 104.14 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Header Pin"
+			(at 104.14 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "49b4b9e0-c987-4162-9901-99f78a663a35")
+		)
+		(instances
+			(project "rom-read-adapter"
+				(path "/65bf6d13-0c24-4e8f-8a57-e3ae2776eac6"
+					(reference "JPA27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "0cjs-hwdev:Header_Pin")
+		(at 104.14 85.09 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ec68ea63-0bb9-449b-9257-b45281b45b66")
+		(property "Reference" "JPA28"
+			(at 109.22 83.8199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Value" "Header_Pin"
+			(at 109.22 86.3599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 104.14 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 104.14 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Header Pin"
+			(at 104.14 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a10cc57f-782a-4696-b02e-07aef017c59b")
+		)
+		(instances
+			(project "rom-read-adapter"
+				(path "/65bf6d13-0c24-4e8f-8a57-e3ae2776eac6"
+					(reference "JPA28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "0cjs-hwdev:Header_Pin")
+		(at 185.42 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eca7bf2c-ac66-4c14-b6c4-759c59f3ceae")
+		(property "Reference" "JPA38"
+			(at 180.34 93.9801 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Value" "Header_Pin"
+			(at 180.34 91.4401 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 185.42 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 185.42 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Header Pin"
+			(at 185.42 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ab995795-2241-4aee-9c27-9832183ac100")
+		)
+		(instances
+			(project "rom-read-adapter"
+				(path "/65bf6d13-0c24-4e8f-8a57-e3ae2776eac6"
+					(reference "JPA38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "0cjs-hwdev:Header_Pin")
+		(at 104.14 109.22 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ef103754-f8a1-4106-96e1-9f3fb20fd8bb")
+		(property "Reference" "JPA36"
+			(at 109.22 107.9499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Value" "Header_Pin"
+			(at 109.22 110.4899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 104.14 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 104.14 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Header Pin"
+			(at 104.14 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c75587ce-178e-4bdc-b2f6-aa7467e16ab6")
+		)
+		(instances
+			(project "rom-read-adapter"
+				(path "/65bf6d13-0c24-4e8f-8a57-e3ae2776eac6"
+					(reference "JPA36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "Header_Pin_2")
+		(lib_id "0cjs-hwdev:Header_Pin")
+		(at 172.72 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f5a4642d-9c2a-42ea-93c3-04c25db2f82b")
+		(property "Reference" "JPA42"
+			(at 167.64 91.4401 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Value" "Header_Pin"
+			(at 167.64 88.9001 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 172.72 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 172.72 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Header Pin"
+			(at 172.974 86.614 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "654d6a99-e08e-455d-9480-3cce0fbf25eb")
+		)
+		(instances
+			(project "rom-read-adapter"
+				(path "/65bf6d13-0c24-4e8f-8a57-e3ae2776eac6"
+					(reference "JPA42")
 					(unit 1)
 				)
 			)
@@ -5395,6 +7887,144 @@
 		)
 	)
 	(symbol
+		(lib_id "0cjs-hwdev:Header_Pin")
+		(at 104.14 104.14 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fb126a47-7cfe-4283-bf3c-10e5b84fa353")
+		(property "Reference" "JPA34"
+			(at 109.22 102.8699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Value" "Header_Pin"
+			(at 109.22 105.4099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 104.14 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 104.14 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Header Pin"
+			(at 104.14 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "53d6c9b3-ccc3-4da2-82a8-e2a0514efa77")
+		)
+		(instances
+			(project "rom-read-adapter"
+				(path "/65bf6d13-0c24-4e8f-8a57-e3ae2776eac6"
+					(reference "JPA34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "0cjs-hwdev:Header_Pin")
+		(at 104.14 119.38 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fe18c351-5508-49bd-b97f-deb476abe44a")
+		(property "Reference" "JPA31"
+			(at 109.22 118.1099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Value" "Header_Pin"
+			(at 109.22 120.6499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 104.14 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 104.14 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Header Pin"
+			(at 104.14 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3be69d4a-565e-4884-bd87-d94410fbb420")
+		)
+		(instances
+			(project "rom-read-adapter"
+				(path "/65bf6d13-0c24-4e8f-8a57-e3ae2776eac6"
+					(reference "JPA31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VCC")
 		(at 158.75 90.17 270)
 		(unit 1)
@@ -5456,6 +8086,75 @@
 			(project ""
 				(path "/65bf6d13-0c24-4e8f-8a57-e3ae2776eac6"
 					(reference "#PWR39")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "0cjs-hwdev:Header_Pin")
+		(at 104.14 121.92 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ff5b7033-f418-426e-89dd-5e9d974d7521")
+		(property "Reference" "JPA32"
+			(at 109.22 120.6499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Value" "Header_Pin"
+			(at 109.22 123.1899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 104.14 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 104.14 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Header Pin"
+			(at 104.14 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2a91cda9-166e-45a2-917f-7feb07a7b494")
+		)
+		(instances
+			(project "rom-read-adapter"
+				(path "/65bf6d13-0c24-4e8f-8a57-e3ae2776eac6"
+					(reference "JPA32")
 					(unit 1)
 				)
 			)
