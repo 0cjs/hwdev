@@ -8,6 +8,10 @@ the 2364 ROM socket. (The cable between the two allows you to have the
 board outside the system case so that you can easily access it to change
 EPROMS.)
 
+You will need a standard 0.1 μF bypass capacitor across the GND (pin 14)
+and Vcc (pin 28) pins of the 2764; an axial capacitor is easily soldered
+across the back of the board.
+
 #### Datasheets
 
 - [NEC NMOS μPD2364][nec2364] Read Only Memory 8192 words, 8 bits/word.
@@ -15,8 +19,8 @@ EPROMS.)
 
 ### Design Notes
 
-This is designed to work (but is as yet untested) when connected to the
-expansion ROM socket of an original [NEC PC-8001]. There are several
+This has been tested to work with the expansion ROM socket of an original
+[NEC PC-8001]. It may work with other systems as well, but there are some
 assumptions made that cannot yet be changed in board configuration (though
 the board should be updated to be configurable for these).
 
