@@ -1303,6 +1303,292 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:Conn_01x05_Pin"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x05_Pin"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x05, script generated"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x05_Pin_1_1"
+				(rectangle
+					(start 0.8636 5.207)
+					(end 0 4.953)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 5.08) (xy 0.8636 5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 2.54) (xy 0.8636 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -5.08) (xy 0.8636 -5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 5.08 5.08 180)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -5.08 180)
+					(length 3.81)
+					(name "Pin_5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:Conn_01x13_Pin"
 			(pin_numbers
 				(hide yes)
@@ -5419,7 +5705,7 @@
 	)
 	(global_label "D3"
 		(shape input)
-		(at 158.75 123.19 0)
+		(at 171.45 139.7 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5429,7 +5715,7 @@
 		)
 		(uuid "279dbe5f-3460-47db-aa4a-9d34d4541651")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 164.2147 123.19 0)
+			(at 176.9147 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5991,7 +6277,7 @@
 	)
 	(global_label "D4"
 		(shape input)
-		(at 158.75 120.65 0)
+		(at 171.45 137.16 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6001,7 +6287,7 @@
 		)
 		(uuid "79d76119-e782-4f64-be1b-af887d8ffd5c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 164.2147 120.65 0)
+			(at 176.9147 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6299,7 +6585,7 @@
 	)
 	(global_label "D5"
 		(shape input)
-		(at 158.75 118.11 0)
+		(at 171.45 134.62 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6309,7 +6595,7 @@
 		)
 		(uuid "aee42349-1dca-410d-aab7-4e64559f8ba9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 164.2147 118.11 0)
+			(at 176.9147 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6431,7 +6717,7 @@
 	)
 	(global_label "D6"
 		(shape input)
-		(at 158.75 115.57 0)
+		(at 171.45 132.08 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6441,7 +6727,7 @@
 		)
 		(uuid "beb3abeb-083b-4105-98d7-13507f6ce4ce")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 164.2147 115.57 0)
+			(at 176.9147 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6607,7 +6893,7 @@
 	)
 	(global_label "D7"
 		(shape input)
-		(at 158.75 113.03 0)
+		(at 171.45 129.54 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6617,7 +6903,7 @@
 		)
 		(uuid "d2396300-e7d0-42eb-9520-803bd3911b3c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 164.2147 113.03 0)
+			(at 176.9147 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6943,10 +7229,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "08cf5dc9-5f4d-49e2-a4fe-03d7f85a0f6c")
 		(property "Reference" "J2"
-			(at 138.43 58.42 0)
+			(at 138.43 126.238 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7904,26 +8189,25 @@
 		)
 	)
 	(symbol
-		(lib_id "Jumper:Jumper_2_Open")
-		(at 153.67 120.65 0)
+		(lib_id "Connector:Conn_01x05_Pin")
+		(at 153.67 118.11 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "44448a6a-2c6f-4f94-a69b-55c428463749")
-		(property "Reference" "JP26"
-			(at 153.67 114.3 0)
+		(uuid "47429a0b-fad6-490c-81b3-45960f7f9f98")
+		(property "Reference" "J5"
+			(at 153.67 125.222 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Value" "Jumper_2_Open"
-			(at 153.67 116.84 0)
+		(property "Value" "Conn_01x05_Pin"
+			(at 153.035 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7932,7 +8216,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 153.67 120.65 0)
+			(at 153.67 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7941,7 +8225,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 153.67 120.65 0)
+			(at 153.67 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7949,8 +8233,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Jumper, 2-pole, open"
-			(at 153.67 120.65 0)
+		(property "Description" "Generic connector, single row, 01x05, script generated"
+			(at 153.67 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7958,16 +8242,25 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "00dceb79-db47-478d-ab58-4a3bb853f185")
+		(pin "5"
+			(uuid "49e94ab8-c4d6-452c-aa04-8fef27b6b849")
 		)
 		(pin "2"
-			(uuid "ff61288b-d30a-4796-8aac-fe1943650506")
+			(uuid "c23fec14-b06a-4d2f-ad8c-67e989ba613a")
+		)
+		(pin "1"
+			(uuid "8846e6c1-53c5-4188-b5db-4069eea09eb8")
+		)
+		(pin "3"
+			(uuid "d17496dc-f04b-4634-ab53-d8c05cbbcf41")
+		)
+		(pin "4"
+			(uuid "eedad84d-17ef-4539-9f1e-436de5258aac")
 		)
 		(instances
-			(project "rom-read-adapter"
+			(project ""
 				(path "/65bf6d13-0c24-4e8f-8a57-e3ae2776eac6"
-					(reference "JP26")
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -8035,76 +8328,6 @@
 			(project "rom-read-adapter"
 				(path "/65bf6d13-0c24-4e8f-8a57-e3ae2776eac6"
 					(reference "#PWR36")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:Jumper_2_Open")
-		(at 153.67 115.57 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4dcd0020-5ec1-43b1-822a-1e8c205bb4ef")
-		(property "Reference" "JP28"
-			(at 153.67 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Jumper_2_Open"
-			(at 153.67 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 153.67 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 153.67 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Jumper, 2-pole, open"
-			(at 153.67 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bde9ac7a-169f-4325-9116-d5bcaa2f039e")
-		)
-		(pin "2"
-			(uuid "bb63b21e-9550-41ec-b253-1fa3080ca091")
-		)
-		(instances
-			(project "rom-read-adapter"
-				(path "/65bf6d13-0c24-4e8f-8a57-e3ae2776eac6"
-					(reference "JP28")
 					(unit 1)
 				)
 			)
@@ -8388,76 +8611,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Jumper:Jumper_2_Open")
-		(at 153.67 113.03 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "674ade3c-4342-4397-b6ab-f612524c8dc6")
-		(property "Reference" "JP29"
-			(at 153.67 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Jumper_2_Open"
-			(at 153.67 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 153.67 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 153.67 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Jumper, 2-pole, open"
-			(at 153.67 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "428f9baa-547b-441a-929d-a419bf1736c9")
-		)
-		(pin "2"
-			(uuid "45863622-6ec1-4caf-a0ef-1754c3c4e252")
-		)
-		(instances
-			(project "rom-read-adapter"
-				(path "/65bf6d13-0c24-4e8f-8a57-e3ae2776eac6"
-					(reference "JP29")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "0cjs-hwdev:Header_Pin")
 		(at 85.09 114.3 180)
 		(unit 1)
@@ -8537,7 +8690,7 @@
 		(dnp no)
 		(uuid "747e7799-0677-4f17-9e24-c74646b94124")
 		(property "Reference" "J4"
-			(at 114.554 125.984 0)
+			(at 116.586 125.222 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9327,10 +9480,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "97299a83-e561-48e1-b903-7eb861f606ab")
 		(property "Reference" "J3"
-			(at 123.825 59.69 0)
+			(at 123.19 125.222 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9343,6 +9495,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -9448,76 +9601,6 @@
 			(project ""
 				(path "/65bf6d13-0c24-4e8f-8a57-e3ae2776eac6"
 					(reference "J3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:Jumper_2_Open")
-		(at 153.67 123.19 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9aadd368-7f9c-483f-b1e2-f29f334dbe1c")
-		(property "Reference" "JP25"
-			(at 153.67 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Jumper_2_Open"
-			(at 153.67 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 153.67 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 153.67 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Jumper, 2-pole, open"
-			(at 153.67 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "93a14618-285b-4293-9188-f3224b93a82a")
-		)
-		(pin "2"
-			(uuid "8b7c3990-a1fe-4319-ae72-c9dca19aca05")
-		)
-		(instances
-			(project "rom-read-adapter"
-				(path "/65bf6d13-0c24-4e8f-8a57-e3ae2776eac6"
-					(reference "JP25")
 					(unit 1)
 				)
 			)
@@ -9809,17 +9892,16 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "b67e97bc-6a63-4332-8ff0-7631905f3c8e")
 		(property "Reference" "J1"
-			(at 60.96 57.15 0)
+			(at 60.96 128.016 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "Conn_02x25_Odd_Even"
+		(property "Value" "Host_Conn_02x25"
 			(at 60.96 59.69 0)
 			(effects
 				(font
@@ -10216,76 +10298,6 @@
 			(project "rom-read-adapter"
 				(path "/65bf6d13-0c24-4e8f-8a57-e3ae2776eac6"
 					(reference "JPA19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:Jumper_2_Open")
-		(at 153.67 118.11 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c4c521f5-a913-4a75-b104-3f5bc96559ea")
-		(property "Reference" "JP27"
-			(at 153.67 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Jumper_2_Open"
-			(at 153.67 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 153.67 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 153.67 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Jumper, 2-pole, open"
-			(at 153.67 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5212cae3-cdee-4472-8e56-986888a7872e")
-		)
-		(pin "2"
-			(uuid "6d02592e-e3c6-49ff-94c6-3d0874a631c9")
-		)
-		(instances
-			(project "rom-read-adapter"
-				(path "/65bf6d13-0c24-4e8f-8a57-e3ae2776eac6"
-					(reference "JP27")
 					(unit 1)
 				)
 			)
