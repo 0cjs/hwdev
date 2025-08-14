@@ -18,10 +18,20 @@ cd "$REPO"
 kicad-cli --version >/dev/null 2>&1 || die 3 "kicad-cli command not found"
 kicad-cli --version >kicad-version  # In $REPO; also done by `render`
 
-#   XXX We do not yet always render everything because `render` doesn't know
-#   not to update the files that will be committed if only the creation
-#   date has changed.
-#./render */kicad/*.kicad_{sch,pcb}
-echo "WARNING: not rendering; this must be done manually for changed files"
+#   XXX Should do design checks here.
+
+#   We automatically render everything only if we're on the `main` branch.
+#   Dev branches are often full of WIP commits where rendering every change
+#   would only get in the way. This means that dev branches should be
+#   brought on to the local `main` and `Test` run before pushing, rather
+#   than using `push origin @:main`.
+if [[ refs/heads/main != $(git rev-parse --symbolic-full-name @) ]]; then
+    echo 'WARNING: not on main; skipping render'
+else
+    mkdir -p $REPO/.build/
+    echo "───── Rendering (stdout in .build/render.log)"
+    ./render */kicad/*.kicad_{sch,pcb} > "$REPO/.build/render.log" || fail
+
+fi
 
 echo "OK ($(elapsed)s)"
