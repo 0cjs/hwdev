@@ -1,3 +1,4 @@
+/.build/
 /kicad-lib/*.bak
 /*/kicad/#auto_saved_files#
 /*/kicad/_autosave-*
