@@ -10,11 +10,11 @@ die() { ec=$1; shift; echo 1>&2 "$@"; exit $ec; }
 
 render_sch() {
     local path="$1"; shift
+    echo "───── Rendering $(basename "$path")"
     local name=$(basename "$path" .kicad_sch)
     local srcdir=$(dirname "$path")
     local outdir="$srcdir"/../render
     local output="$outdir/$name-sch.pdf"
-    echo "───── Rendering $name"
     mkdir -p "$outdir"
     kicad-cli sch export pdf --output "$output" "$path"
 
@@ -40,11 +40,11 @@ render_pcb() {
     #   XXX This currently overwrites all the output files with new
     #   versions even if only the creation date of these files is changing.
     local path="$1"; shift
+    echo "───── Rendering $(basename "$path")"
     pcbname=$(basename "$path" .kicad_pcb)
     local srcdir=$(dirname "$path")
     local outdir="$srcdir/../render/$pcbname-gerber"
 
-    echo "───── Rendering $pcbname"
     echo "Output directory: $outdir/"
     mkdir -p "$outdir"
     #   Generates all layers, whether needed or not.
@@ -80,8 +80,8 @@ jlcpcb_zip() {
 kicad-cli --version >/dev/null 2>&1 || die 3 "kicad-cli command not found"
 kicad-cli --version >kicad-version
 
-for arg in ${@}; do case "$1" in
-    *.kicad_sch)    render_sch "$1";;
-    *.kicad_pcb)    render_pcb "$1";;
-    *)              die 2 "Unknown file type: $1"
+for arg in ${@}; do case "$arg" in
+    *.kicad_sch)    render_sch "$arg";;
+    *.kicad_pcb)    render_pcb "$arg";;
+    *)              die 2 "Unknown file type: $arg"
 esac; done
