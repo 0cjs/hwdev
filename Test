@@ -14,11 +14,11 @@ elapsed() { echo $(( $(date +%s) - $elapsed_start )); }
 export REPO=$(cd "$(dirname "$0")" && pwd -P)
 cd "$REPO"
 
-#   `render` doesn't need this, be we need it for running design checks.
+#   We need this to run design checks, even if we don't use `render`.
 kicad-cli --version >/dev/null 2>&1 || die 3 "kicad-cli command not found"
-kicad-cli --version >kicad-version
+kicad-cli --version >kicad-version  # In $REPO; also done by `render`
 
-#   XXX We do not yet always render everyting because `render` doesn't know
+#   XXX We do not yet always render everything because `render` doesn't know
 #   not to update the files that will be committed if only the creation
 #   date has changed.
 #./render */kicad/*.kicad_{sch,pcb}

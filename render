@@ -144,6 +144,12 @@ The rendered files are updated only if they differ in something other than
 the creation date so that spurious changes are not generated in Git
 commits.
 
+This will always create/update a 'kicad-version' file in the same directory
+as this script to help determine if changes to the rendered output are due
+to using a different version of KiCad, rather than actual changes to the
+source files. It also uses a .build/ subdirectory in the same directory for
+temporary files; /.build/ should be added to .gitignore.
+
 As well as 'kicad-cli', the 'git' and 'strip-nondeterminism' programs
 are required; these are available in Debian, Ubuntu and other Linux
 distributions.
@@ -156,7 +162,7 @@ check_command git --version
 check_command kicad-cli --version
 check_command strip-nondeterminism -V
 
-kicad-cli --version >kicad-version
+kicad-cli --version >"$projdir/kicad-version"
 for arg in ${@}; do case "$arg" in
     *.kicad_sch)    render_sch "$arg";;
     *.kicad_pcb)    render_pcb "$arg";;
