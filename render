@@ -79,15 +79,18 @@ jlcpcb_zip() {
             *.gm1                           \
             *.drl *-drl_map.gbr             \
             #
+        strip-nondeterminism ../"$pcbname"-jlcpcb.zip
     )
 }
 
 ####################################################################
 #   Main
 
-kicad-cli --version >/dev/null 2>&1 || die 3 "kicad-cli command not found"
-kicad-cli --version >kicad-version
+kicad-cli --version >/dev/null || die 3 "kicad-cli command not found"
+strip-nondeterminism -V >/dev/null || die 3 "strip-nondeterminism command" \
+    "not found; install strip-nondeterminism package?"
 
+kicad-cli --version >kicad-version
 for arg in ${@}; do case "$arg" in
     *.kicad_sch)    render_sch "$arg";;
     *.kicad_pcb)    render_pcb "$arg";;
