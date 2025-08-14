@@ -24,6 +24,10 @@ render_tmp="$projdir/.build/tmp/render"
 
 die() { ec=$1; shift; echo 1>&2 "$(basename "$0"):" "$@"; exit $ec; }
 
+check_command() {
+    "$@" >/dev/null || die 3 "Cannot run '$1'. Install package?"
+}
+
 clear_render_tmp() {
     rm -rf "$render_tmp"
     mkdir -p "$render_tmp"
@@ -126,10 +130,9 @@ jlcpcb_zip() {
 ####################################################################
 #   Main
 
-git --version >/dev/null || die 3 'git command not found'
-kicad-cli --version >/dev/null || die 3 "kicad-cli command not found"
-strip-nondeterminism -V >/dev/null || die 3 "strip-nondeterminism command" \
-    "not found; install strip-nondeterminism package?"
+check_command git --version
+check_command kicad-cli --version
+check_command strip-nondeterminism -V
 
 kicad-cli --version >kicad-version
 for arg in ${@}; do case "$arg" in
