@@ -6,6 +6,11 @@ set -Eeuo pipefail
 trap 'ec=$?; echo 1>&2 "INTERNAL ERROR: ec=$ec line=$LINENO cmd=$BASH_COMMAND";
       exit $ec;' ERR
 
+#   Ensure we have consistent sorting of filenames for any programs
+#   that use locale-based sorting, regardless of user's locale.
+#   (Bash sorts glob/pathname expansions using LC_COLLATE.)
+export LC_COLLATE=C
+
 die() { ec=$1; shift; echo 1>&2 "$@"; exit $ec; }
 
 render_sch() {
@@ -63,6 +68,9 @@ jlcpcb_zip() {
     local outdir="$2"
     (
         cd $outdir
+        #   We need to start without an existing ZIP file because otherwise
+        #   ZIP will add updates to the existing file, which produces a
+        #   different result from creating a fresh file.
         rm -f ../"$pcbname"-jlcpcb.zip
         #   We disable ZIP compression because that will make Git's
         #   compression of the file as it changes much worse.
