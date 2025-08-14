@@ -1,11 +1,9 @@
 #!/usr/bin/env bash
 #
-#   render - Generate PDF schematics and Gerber PCB layouts
+#   render - Generate KiCad PDF schematics and Gerber PCB files
 #
-#   This takes .kicad_sch and .kicad_pcb files as parameters. It updates
-#   the rendered files only if they differ in something other than the
-#   creation date so that spurious changes are not generated in Git
-#   commits.
+#   Pass `-h` as the first option or see the start of the main program
+#   below for usage information.
 #
 set -Eeuo pipefail
 trap 'ec=$?; echo 1>&2 "INTERNAL ERROR: ec=$ec line=$LINENO cmd=$BASH_COMMAND";
@@ -129,6 +127,30 @@ jlcpcb_zip() {
 
 ####################################################################
 #   Main
+
+if [[ $# -eq 0 ]] || [[ $1 = -h ]] || [[ $1 = --help ]]; then
+    cat <<_____
+Usage: $(basename "$0") FILE.kicad_sch|FILE.kicad_pcb ...
+
+For .kicad_sch files, this will render a .pdf version of the schematic
+in ../render/, relative to the directory containing the .kicad_sch file.
+
+For .kicad_pcb files, this will render a directory the Gerber and drill
+files to ../render/{name}-gerber/ and a ../render/{name}-jlcpcb.zip file
+contining the subset of the Gerber and drill files required for a JLCPCB
+upload.
+
+The rendered files are updated only if they differ in something other than
+the creation date so that spurious changes are not generated in Git
+commits.
+
+As well as 'kicad-cli', the 'git' and 'strip-nondeterminism' programs
+are required; these are available in Debian, Ubuntu and other Linux
+distributions.
+
+_____
+    exit 0
+fi
 
 check_command git --version
 check_command kicad-cli --version
