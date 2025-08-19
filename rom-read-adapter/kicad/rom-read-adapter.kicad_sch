@@ -14148,7 +14148,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.1mm_W3.2mm_P5.00mm"
+		(property "Footprint" "Capacitor_THT:C_Axial_L3.8mm_D2.6mm_P10.00mm_Horizontal"
 			(at 160.9852 73.66 0)
 			(effects
 				(font
