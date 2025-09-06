@@ -35,7 +35,8 @@ with the following features.
   - 4×4 layout for hex digits `0` to `F`
   - 4 keys at the top and 4 keys at the right for commands
 * 3 independent debounced switches:
-  - All 3 provide positive and negative logic outputs
+  - Debounce time can be configured by changing a resistor value (see below).
+  - All 3 provide positive and negative logic outputs.
   - 1 key at upper right hand corner of switch array for NMI interrupt
   - 1 tactile switch for RESET
   - 1 slide switch for a user-selected function
@@ -196,7 +197,53 @@ This is still out of spec for 5V CMOS output voltage, but well within the
 
 ### NMI, Reset and Slide Switch Outputs
 
-XXX Fill in debounce and true-logic/inverting output details.
+#### Debounce
+
+The upper-right key on the keypad is the "NMI" button. Above the keypad and
+to the right is a momentary-contact button, "Reset." Above the keypad and
+to the left is a slide switch, "switch" (which may also be called "single
+step"). These all provide debounced positive and negative signals separate
+from the key matrix. They may be used for any purpose; the names merely
+represent typical uses.
+
+Each is debounced via a resistor-capacitor pair, with a diode for
+overvoltage protection. R1/C1/D1 are used for NMI; R2/C2/D2 for Reset, and
+R3/C3/D3 for the switch. All three operate in exactly the same way, though
+you may vary the resistor values for each to give different debounce time
+constants if needed. (This will normally not be necessary.)
+
+The debounce works as follows.
+
+When the switch is open (not pressed), the input to the 74x14 Schmitt
+trigger gate is raised to +5 V through resistor R1. However, reaching +5 V
+will be delayed because C2 must be charged first. (The rate of charge is
+[standard for an RC circuit][rc].) Once the charge on R1 has reached the
+Vt+ level of the '14 (typically ~1.6 V), the positive logic output of the
+switch will go low and the negative logic output of the switch will go
+high.
+
+When the switch is pressed, it will short the '14 input to ground, quickly
+making it fall below the Vt- level of the '14 (typically ~0.8 V) and the
+positive logic output of the switch will switch to high and the negative
+logic output will switch to low. This state will remain until the switch is
+released, at which point the capacitor will start charging through the RC
+circuit as above, eventually reaching the point where the positive logic
+output goes low and the negative logic output goes high.
+
+The time constant of R1×C1 determines how long the switch will take to be
+released; with the specified 10 kΩ resistor and 0.1 μF capacitor, this will
+be about 1 millisecond. The resistor can be changed to a higher value (e.g.
+100 kΩ = 10 ms) or a lower value (e.g., 1 kΩ = 100 μs) if necessary.
+
+The Schottky diode (typically 1N5819 or 1N5817) from the gate input to the
++5 V source ensures that the voltage at the gate input never exceeds the
+power supply Vcc level plus the forward voltage drop of 0.3 V.
+
+#### Switch LED
+
+The switch additionally has an LED that is illuminated when it's active (in
+the "up" position) and extinguished when it's inactive (in the "down"
+position).
 
 A current-limiting resistor R5 (1K5) and power LED D5 indicate when the
 slide switch is active (up). The current-limiting resistor is relatively
@@ -220,3 +267,5 @@ latter because LS logic is much better at sinking current than sourcing it.
 [NEC TK-85]: https://gitlab.com/retroabandon/tk80-re
 [kailh]: https://www.adafruit.com/product/4958
 [keysw]: https://www.aliexpress.com/item/1005004285423123.html
+
+[rc]: https://en.wikipedia.org/wiki/Rc_circuit
