@@ -58,7 +58,7 @@ revision and _B_ is the board revision within that scheamtic. Either number
 being suffixed with `dev` indicates that it's a development revision
 heading towards that next revision, e.g., `2dev-3` is development towards
 revision `2` of the schematic. (Revision `0` is always considered a
-devleopment revision towards revision `1`.)
+development revision towards revision `1`.)
 
 The revision number is separately set and updated (in _File » Page
 Settings…_) for the schematic and PCB. If you change the schematic from `2`
