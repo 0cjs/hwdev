@@ -88,6 +88,15 @@ any of several web-based Gerber viewers. These include:
   Gerber layer views, error checking, and a PDF report download that
   includes 2D top/ bottom board views.
 
+* __[Tracespace viewer]:__ An [open source][tracespace] viewer that can
+  accept URLs to ZIP files of Gerbers. (This has been re-used by several
+  PCB house websites and others.) Unfortunately, it does not follow HTTP
+  302 redirects, so it doesn't work with "raw download" links from GitHub;
+  you need to convert them to the `githubusercontent.com` link. Also,
+  unfortunately, there seems to be no way to specify the download URL in a
+  query string to have it automatically load the data by clicking on a
+  link.
+
 Viewers confirmed not to work with the ZIP file include the __[Altium 365
 viewer].__ (These may work by uploading the individual files under the
 `render/$PROJECT-gerber/` directory.)
@@ -107,3 +116,5 @@ viewer].__ (These may work by uploading the individual files under the
 [JLCPCB]: https://jlcpcb.com/
 [NextPCB viewer]: https://www.nextpcb.com/free-online-gerber-viewer.html
 [PCBWay viewer]: https://www.pcbway.com/project/OnlineGerberViewer.html
+[Tracespace viewer]: https://tracespace.io/view/
+[tracespace]: https://github.com/tracespace/tracespace
