@@ -12,18 +12,19 @@ __Note for developers:__ Please run `Test` before committing. But also:
   normally used with this repo. Check the `kicad-version` file for changes
   and, if lower, upgrade, or if higher, discuss with the repo owner.
 
-#### General Files
+#### General Files and Directores
 
 - `Test`: Top-level test script.
-- `render`: Given paths to `.kicad_sch` and `.kicad_pcb` files, renders PDF
-  and Gerber versions of these to a `render/` dir at the same level as the
-  directory containing the sch/pcb files. Run `./render -h` for more
-  details.
+- `bin/`: Support programs and scripts.
+  - `bin/render`: Given paths to `.kicad_sch` and `.kicad_pcb` files,
+    renders PDF and Gerber versions of these to a `render/` dir at the same
+    level as the directory containing the sch/pcb files. Run `bin/render -h`
+    for more details.
 - `kicad-version`: The version of KiCad used in the commit.
 - `kicad-lib`: Contains the `0cjs-hwdev` KiCad symbol library, mainly
   vintage parts.
 
-#### Projects
+#### Project Directories
 
 - [`drom`]: Ideas for a diode-ROM board.
 - [`floppy-head-protector`]: PCB-only project to build a template to cut

@@ -30,8 +30,7 @@ if [[ refs/heads/main != $(git rev-parse --symbolic-full-name @) ]]; then
 else
     mkdir -p $REPO/.build/
     echo "───── Rendering (stdout in .build/render.log)"
-    ./render */kicad/*.kicad_{sch,pcb} > "$REPO/.build/render.log" || fail
-
+    bin/render */kicad/*.kicad_{sch,pcb} > "$REPO/.build/render.log" || fail
 fi
 
 echo "OK ($(elapsed)s)"
