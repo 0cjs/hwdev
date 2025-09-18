@@ -1257,7 +1257,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 2 "VCC")
-			(pinfunction "Vcc")
+			(pinfunction "VCC_IN")
 			(pintype "power_out")
 			(uuid "55fc4434-d780-4a39-a791-00fdaf3b5cf9")
 		)
