@@ -1,12 +1,12 @@
-%TF.GenerationSoftware,KiCad,Pcbnew,9.0.3+1*%
-%TF.CreationDate,2025-09-17T15:15:53+09:00*%
+%TF.GenerationSoftware,KiCad,Pcbnew,9.0.4-9.0.4-0~ubuntu24.04.1*%
+%TF.CreationDate,2025-09-18T23:07:20+09:00*%
 %TF.ProjectId,romread-adapter,726f6d72-6561-4642-9d61-646170746572,0-0*%
 %TF.SameCoordinates,Original*%
 %TF.FileFunction,Soldermask,Top*%
 %TF.FilePolarity,Negative*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 9.0.3+1) date 2025-09-17 15:15:53*
+G04 Created by KiCad (PCBNEW 9.0.4-9.0.4-0~ubuntu24.04.1) date 2025-09-18 23:07:20*
 %MOMM*%
 %LPD*%
 G01*
