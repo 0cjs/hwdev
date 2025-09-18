@@ -1,6 +1,10 @@
 ROM Reading Adapter
 ===================
 
+You can download [the schematic in PDF format][dl-sch] and [a ZIP of the
+Gerbers][dl-jlc]. The latter has been tested with JLCPCB, and you can also
+give that URL to [tracespace.io] to view them.
+
 This board allows a host device to read up to 42-pin through-hole DIP ROMs
 with any arbitrary pinout. The host device will typically be a computer
 that can supply ground and +5V, and has at least two Intel [8255] PPIs
@@ -92,5 +96,9 @@ A number of PCB DRC warnings are ignored. The reasons are:
 
 
 <!-------------------------------------------------------------------->
+[dl-jlc]: https://raw.githubusercontent.com/0cjs/hwdev/dev/cjs/25g03/rom-read-adapter/romread-adapter/render/romread-adapter-jlcpcb.zip
+[dl-sch]: https://raw.githubusercontent.com/0cjs/hwdev/dev/cjs/25g03/rom-read-adapter/romread-adapter/render/romread-adapter-sch.pdf
+[tracespace.io]: https://tracespace.io/view/
+
 [SuperAKI-80 SBC]: https://akizukidenshi.com/goodsaffix/A003_SuperAKI-80.pdf
 [8255]: https://en.wikipedia.org/wiki/Intel_8255
