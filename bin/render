@@ -63,6 +63,20 @@ copy_nonignored_diff() {
 ####################################################################
 #   Rendering functions
 
+find_and_render() {
+    #   Given a directory, find and render all
+    #   *.kicad_sch and *.kicad_pcb files under it.
+    local dir="$1"; shift
+    [[ -d $dir ]] || die 1 "not a directory: $dir"
+    echo "───── Searching $dir"
+    local type file
+    for type in sch pcb; do
+        for file in $(find "$dir" -name "*.kicad_$type" -a -type f); do
+            render_$type "$file"
+        done
+    done
+}
+
 render_sch() {
     local path="$1"; shift
     echo "───── Rendering $(basename "$path")"
@@ -130,7 +144,7 @@ jlcpcb_zip() {
 
 if [[ $# -eq 0 ]] || [[ $1 = -h ]] || [[ $1 = --help ]]; then
     cat <<_____
-Usage: $(basename "$0") FILE.kicad_sch|FILE.kicad_pcb ...
+Usage: $(basename "$0") FILE.kicad_sch|FILE.kicad_pcb|DIR ...
 
 For .kicad_sch files, this will render a .pdf version of the schematic
 in ../render/, relative to the directory containing the .kicad_sch file.
@@ -139,6 +153,9 @@ For .kicad_pcb files, this will render a directory the Gerber and drill
 files to ../render/{name}-gerber/ and a ../render/{name}-jlcpcb.zip file
 contining the subset of the Gerber and drill files required for a JLCPCB
 upload.
+
+Given a directory, it will search under it for *.kicad_{sch,pcb} files
+and render them as above.
 
 The rendered files are updated only if they differ in something other than
 the creation date so that spurious changes are not generated in Git
@@ -166,5 +183,5 @@ kicad-cli --version >"$projdir/kicad-version"
 for arg in ${@}; do case "$arg" in
     *.kicad_sch)    render_sch "$arg";;
     *.kicad_pcb)    render_pcb "$arg";;
-    *)              die 2 "Unknown file type: $arg"
+    *)              find_and_render "$arg"
 esac; done
