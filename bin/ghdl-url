@@ -1,0 +1,122 @@
+#!/usr/bin/env bash
+#
+#   ghdlurl - get fully resolved download URL for a GitHub file
+#
+#   The download URLs given for the "download raw" option on GitHub are
+#   not actually the URL that serves the file, but issue an HTTP 302
+#   redirect. This works out the "download raw" URL and then follows
+#   the redirects through to the final URL in order to print that.
+#   (This gives a URL that works with programs that cannot follow HTTP 302
+#   redirects, such as tracespace.io.)
+#
+#   This currently works only when the current branch has an upstream,
+#   since that upstream gives us the remote repo to use. In theory we
+#   can also get the download URL for an arbitrary branch, tag or commit
+#   but then we would need to figure out the upstream through other means,
+#   such as perhaps going through all the remotes and finding the first
+#   one that is a GitHub remote.
+#
+#   TODO:
+#   • Add option to copy URL to system copy/paste buffer.
+#   • Consider finding URLs for refs without an upstream, per above.
+#   • Add support for GitLab.
+#
+set -Eeuo pipefail
+trap 'ec=$?; echo 1>&2 "INTERNAL ERROR: ec=$ec line=$LINENO cmd=$BASH_COMMAND";
+      exit $ec;' ERR
+
+die() { local ec=$1; shift; echo >&2 "$(basename "$0"):" "$@"; exit $ec; }
+
+vecho() {
+    $verbose || return 0
+    #   XXX should be stderr because programs may use stdout?
+    echo "$@"
+}
+
+####################################################################
+#   Setup and argument parsing.
+
+usage() {
+    local ec=$1; shift
+    cat <<_____
+Usage: $(basename "$0") [opts] <filepath>
+Print GitHub download URL for <filepath>.
+Options:
+  -h, --help        Show this help message.
+  -v, --verbose     Explain processing steps as they execute.
+_____
+    exit $ec
+}
+
+verbose=false
+while [[ $# -gt 0 ]]; do case "$1" in
+    -h|--help)      shift; usage 0;;
+    -v|--verbose)   shift; verbose=true;;
+    -*)             die 2 "unknown option: $1";;
+    *)              break;;
+esac; done;
+[[ $# -eq 1 ]] || usage 2
+
+[[ -f $1 ]] || die 1 "not a file: $1"
+file=$(basename "$1")
+dir=$(cd "$(dirname "$1")" && pwd -P)
+vecho "path: $dir/$file"
+
+curl --version >/dev/null >&1 || die 3 "curl not found; 'apt install curl'?"
+
+####################################################################
+#   Main
+
+repo=$(git -C "$dir" rev-parse --show-toplevel 2>/dev/null || true)
+vecho "repo: $repo"
+[[ -n $repo ]] || die 1 "not in a Git repo: $dir"
+
+relpath=${dir##$repo}/"$file"   # will have leading '/'
+vecho "relpath: $relpath"
+
+branch=$(git -C "$repo" rev-parse --abbrev-ref HEAD 2>/dev/null \
+    || git -C "$repo" rev-parse HEAD)
+vecho "branch: $branch"
+
+remote_name=$(git -C "$repo" config --get "branch.$branch.remote" || true)
+vecho "remote name: $remote_name"
+[[ -n $remote_name ]] || die 1 "branch $branch has no remote" \
+    "tracking branch configured; first push to GitHub."
+
+remote_url=$(git -C "$repo" config \
+    --get "remote.$remote_name.url" 2>/dev/null || true)
+vecho "remote_url: $remote_url"
+[[ -n "$remote_url" ]] || die 1 "no remote '$remote_name' found in repository"
+
+#   The remote may be in SSH or HTTPS format, and either might end in
+#   `.git`. Translate all of these to HTTPS format without `.git`.
+if [[ "$remote_url" =~ ^git@github\.com:(.+)/(.+)\.git$ ]]; then
+    # SSH format: git@github.com:user/repo.git
+    repo_owner="${BASH_REMATCH[1]}"
+    repo_name="${BASH_REMATCH[2]}"
+elif [[ "$remote_url" =~ ^https://github\.com/(.+)/(.+)\.git$ ]]; then
+    # HTTPS .git format: https://github.com/user/repo.git
+    repo_owner="${BASH_REMATCH[1]}"
+    repo_name="${BASH_REMATCH[2]}"
+elif [[ "$remote_url" =~ ^https://github\.com/(.+)/(.+)$ ]]; then
+    # HTTPS no-.git: https://github.com/user/repo
+    repo_owner="${BASH_REMATCH[1]}"
+    repo_name="${BASH_REMATCH[2]}"
+else
+    die 1 "remote URL '$remote_url' is not a GitHub repository"
+fi
+vecho "repo owner/name: $repo_owner/$repo_name"
+
+#   This is the raw view URL that GitHub's web interface gives.
+#   It actually leads just to an HTTP 302 redirect to the real URL.
+#   Remember, $relpath has a leading slash already.
+raw_url="https://github.com/$repo_owner/$repo_name/raw/$branch$relpath"
+vecho "raw_url: $raw_url"
+
+#   XXX should we be using HEAD here to avoid fetching the entire file?
+end_url=$(curl -Ls --head -o /dev/null -w '%{url_effective}' "$raw_url")
+ec=$?
+vecho "end_url (ec=$ec): $end_url"
+[[ $ec -eq 0 && -n "$end_url" ]] || die 1 "failed to fetch URL: $end_url"
+
+echo "$end_url"

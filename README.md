@@ -20,6 +20,9 @@ __Note for developers:__ Please run `Test` before committing. But also:
     renders PDF and Gerber versions of these to a `render/` dir at the same
     level as the directory containing the sch/pcb files. Run `bin/render -h`
     for more details.
+  - `bin/ghdl-url`: Given a path to a file in a repo, return the fully
+    resolved (i.e., not HTTP 302 redirects) GitHub download URL for it.
+    (See the header comments in the file for more detail.)
 - `kicad-version`: The version of KiCad used in the commit.
 - `kicad-lib`: Contains the `0cjs-hwdev` KiCad symbol library, mainly
   vintage parts.
@@ -93,10 +96,10 @@ any of several web-based Gerber viewers. These include:
   accept URLs to ZIP files of Gerbers. (This has been re-used by several
   PCB house websites and others.) Unfortunately, it does not follow HTTP
   302 redirects, so it doesn't work with "raw download" links from GitHub;
-  you need to convert them to the `githubusercontent.com` link. Also,
-  unfortunately, there seems to be no way to specify the download URL in a
-  query string to have it automatically load the data by clicking on a
-  link.
+  you need to convert them to the `githubusercontent.com` link with
+  the `bin/ghdl-url` program. Also, unfortunately, there seems to be no way
+  to specify the download URL in a query string to have it automatically
+  load the data by clicking on a link.
 
 Viewers confirmed not to work with the ZIP file include the __[Altium 365
 viewer].__ (These may work by uploading the individual files under the
