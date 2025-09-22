@@ -10906,6 +10906,18 @@
 			(justify left)
 		)
 	)
+	(gr_text "revision ${REVISION}\nhttps://github.com/0cjs/hwdev"
+		(at 107.95 64.77 0)
+		(layer "F.SilkS")
+		(uuid "6db7832c-5f81-4f14-ac88-eae67dd312f6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
 	(gr_text "28"
 		(at 169.98 109.22 0)
 		(layer "F.SilkS")
@@ -11036,6 +11048,18 @@
 				(thickness 0.15)
 			)
 			(justify right)
+		)
+	)
+	(gr_text "romread-adapter"
+		(at 107.684905 61.585935 0)
+		(layer "F.SilkS")
+		(uuid "7d55caa9-39eb-4c56-bfaf-705dbbce4d4b")
+		(effects
+			(font
+				(size 2 2)
+				(thickness 0.25)
+			)
+			(justify left bottom)
 		)
 	)
 	(gr_text "17"
@@ -12008,25 +12032,6 @@
 				(thickness 0.1)
 			)
 			(justify right)
-		)
-	)
-	(gr_text_box "romread-adapter ${REVISION}\nhttps://github.com/0cjs/hwdev"
-		(start 105.370153 59.597897)
-		(end 133.389847 64.862103)
-		(margins 1.0025 1.0025 1.0025 1.0025)
-		(layer "F.SilkS")
-		(uuid "660cf220-d585-4967-b5fa-8e2b70975568")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.1)
-			)
-			(justify left top)
-		)
-		(border no)
-		(stroke
-			(width 0)
-			(type solid)
 		)
 	)
 	(gr_text_box "IC at this end  \nPin 1 up  "

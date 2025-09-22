@@ -60,6 +60,10 @@
       ],
       "drc_exclusions": [
         [
+          "courtyards_overlap|105754000|57656256|2d999366-c63d-4e74-9136-61d0288edb8f|3caaa8ef-c289-46b0-b375-3cd4d1daad5b",
+          "Mounting screw will not interfere with ZIF handle"
+        ],
+        [
           "courtyards_overlap|155715000|104905000|31849a4e-635f-4c9c-81e4-de5bef7116b1|cf72a9c6-a642-4c84-a7ed-f2c21c36359c",
           "Adjacent header pins"
         ],
@@ -78,6 +82,10 @@
         [
           "courtyards_overlap|179565000|125231902|2a324219-daa7-4bc1-ad14-e8037109f2a7|c0e62f2b-f626-40a1-88b2-53b2de26c34b",
           "Adjacent header pins"
+        ],
+        [
+          "npth_inside_courtyard|105092500|54292500|e4bedfae-ff8b-486b-b5f8-2f252d150abe|3caaa8ef-c289-46b0-b375-3cd4d1daad5b",
+          "Mounting screw will not interfere with ZIF handle"
         ],
         [
           "silk_edge_clearance|101599999|71388549|beb8ed9f-47d8-48ed-b953-c38ad5f21d97|1acc9c65-19d1-4322-b184-09d7b616c470",
