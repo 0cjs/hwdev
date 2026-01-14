@@ -14,6 +14,11 @@ Todo:
 - [BOM format][jlc-pcba-bom]
 
 
+Each input from the device under test connects to J1 and thence through a
+1200Ω resistor to the two comparitor inputs. (The 1200Ω resistor limits
+out-of-range current to a maximum of 10 mA at -12 V.)
+
+
 Reference Voltages
 ------------------
 
@@ -35,7 +40,7 @@ pads that parallel them.
 Parts
 -----
 
-### LM339 Comparitors
+### [LM339LV] Comparitors
 
 From the following options, we've chosen LM339LVDR (SOIC-14):
 
@@ -58,5 +63,6 @@ From the following options, we've chosen LM339LVDR (SOIC-14):
 [jlc-pcba-bom]: https://jlcpcb.com/help/article/bill-of-materials-for-pcb-assembly
 [jlc-parts]: https://jlcpcb.com/parts/all-electronic-components
 
+[LM339LV]: https://www.ti.com/lit/ds/symlink/lm339lv.pdf
 [XL-3216SURC-FB]: https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8589949748750299136
 [XL-3216UGC-FB]: https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8589836680988557312
